@@ -1,33 +1,203 @@
-.App {
-  text-align: center;
+/* #db5545  icon red*/
+/* #047cb4 icon blue*/
+
+@font-face{
+  font-family: 'Eina';
+  src: url('../src/fonts/eina-01-semibold.otf');
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin:0;
+  background-color: #f3b7ba;
+  font-family: Eina;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.banner{
+  margin:auto;
+  /*background-color:black;*/
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (min-width: 1024px) {
+
+  #logo{
+    height:300px;
+    width:300px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .image{
+    position: absolute;
+    display:inline;
+    color:white;
   }
+
+  .year{
+    position: relative;
+    display:inline-block;
+    margin-left: 2%;
+    
+  }
+
+  #about{
+    width:1% !important;
+  }
+
+  .title{
+    font-size: 2.5em;
+    width:auto;
+    margin:auto;
+    display:inline-block;
+    
+  }
+
+  .title:hover{
+  }
+
+  .title:active{
+
+  }
+
+  #attic{
+    height:300px !important;
+    font-size: 3.0em !important;
+
+  }
+
+  #about{
+    height:300px !important;
+    font-size: 3.0em !important;
+  }
+
+  .banner{
+    position:sticky !important;
+    
+  }
+  
+  li{
+    width:auto;
+  }
+
+  ul{
+    width:auto;
+    /* display:inline-block; */
+    text-align: center;
+    margin:auto;
+    /* position:absolute; */
+    /* left:27%; */
+  }
+
+  #image{
+    /* left: 22%;     */
+  }
+ }
+ 
+/*@media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { } */
+ 
+@media all and (min-width: 800px) {
+
+
+  .projects{
+
+  }
+
+  .title{
+    
+  }
+
+  ul{
+    padding:0;
+    /* text-align: center; */
+  }
+
+  li{
+    list-style-type: none;
+    margin-bottom:11px;
+
+  }
+
+  a{
+    font-size: 2em;
+    letter-spacing: .07em;
+    font-weight: 100;
+    margin:0;
+    padding-top:0px;
+    text-decoration: none;
+    height:50px;
+    width:50px;
+    
+  }
+
+  #about{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    font-size: 1.3em;
+    height:105px;
+    width:10%;
+    margin:1.2em;
+    writing-mode: vertical-rl;
+  }
+
+  #attic{
+    position: absolute;
+    top:0;
+    right:0;
+    margin:1.2em;
+    height:105px;
+    writing-mode: vertical-rl;
+    font-size: 1.3em;
+    letter-spacing:2px;
+  }
+
+  .title:active{
+    background-color:black;
+    position: relative;
+    color:white;
+  }
+
+  #aboutContainer{
+    margin-left:24.9px;
+    margin-right:24.9px;
+  }
+
+  .aboutUsWords{
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+  #aboutUs{
+    text-align: center;
+    margin:0;
+    margin-bottom:10px;
+  }
+
+  .year{
+    /* display:none; */
+  }
+
+  .image{
+    /* display: none; */
+  }
+
+  .banner{
+    padding-right: 20%;
+    padding-left:20%;
+  }
+
+  img{
+    height:200px;
+    width:200px;
+  }
+
+  .aboutContainer{
+    
+  }
+
+
 }
