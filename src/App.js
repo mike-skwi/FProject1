@@ -16,6 +16,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevstate){
+    // do an animation to show a "Switching of views"
     console.log("bb")
     console.log(prevstate)
   }
@@ -23,6 +24,7 @@ class App extends React.Component {
 
 
   goToPage = (page) => {
+    console.log("Hiiiit")
     this.setState(state => ({
       //chosenProject:this.props.goTo("test")
       pageName:page

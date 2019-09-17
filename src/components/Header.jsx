@@ -12,7 +12,6 @@ class Header extends React.Component {
         <div class="banner">
             <a id="about">About Us</a>
             <img id="logo" src={logo}/>
-            
             <a id="attic">The Attic</a>
         </div>
       );

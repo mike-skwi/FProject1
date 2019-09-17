@@ -45,9 +45,8 @@ class Landing extends React.Component {
       yCoord: e.nativeEvent.offsetY, 
       hoveredProject:e.target.innerText 
     });
-    return(
-      <div><p>hello</p></div>
-    );
+
+
     // console.log(e.target.innerText)
   }
   render() {
