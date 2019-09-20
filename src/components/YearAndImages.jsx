@@ -13,9 +13,9 @@ class YearAndImages extends React.Component {
         if (this.props.activeProject === this.props.projectName){
             return(
                 <div class="yearAndImages"> 
-                    <h1>{this.props.year}</h1>
+                    <p id="year" style={yearStyle}>{this.props.year}</p>
                     {console.log(this.props.year)}
-                    <img src={GreenUnit}/>
+                    {/* <img src={GreenUnit}/> */}
                 </div>
         );
         }
@@ -24,7 +24,11 @@ class YearAndImages extends React.Component {
 }
 
 const yearStyle = {
+    background:'red',
+    color:'white',
+    display:'inline-block'
 
+    // SHOULD display on cursor
 }
 
 const imgStyle = {

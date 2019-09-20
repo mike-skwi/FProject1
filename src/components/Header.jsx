@@ -16,11 +16,22 @@ class Header extends React.Component {
             <Spring
             from={{opacity:0, marginTop:-500}}
             to={{opacity:1, marginTop:0}}
-            config={{tension:40,friction:10, precision:1}}
+            config={{tension:150,friction:10, precision:1}}
             >
             { props => (
               <div style={props}>
                 {/*Put anything you want to animate here */}
+                <Spring
+                        from={{marginTop:-500}}
+                        to={{marginTop:0}}
+                        config={{delay:100, duration:100}}
+                    >
+                        {props=>(
+                            <div style={props}>
+                              {/* <img id="logo" src={logo}/> */}
+                            </div>
+                        )}
+                    </Spring>
 
                 <Spring
                         from={{opacity:0}}
@@ -36,7 +47,6 @@ class Header extends React.Component {
 
 
 
-                <img id="logo" src={logo}/>
                 
                 <Spring
                         from={{rotation:"0deg"}}
@@ -45,7 +55,8 @@ class Header extends React.Component {
                     >
                         {props=>(
                             <div style={props}>
-                                <a id="attic">The Attic</a>
+                                {/* notice the id of about us */}
+                                <a id="attic">About Us</a>
                             </div>
                         )}
                     </Spring>

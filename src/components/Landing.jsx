@@ -60,7 +60,7 @@ class Landing extends React.Component {
       class="projects">
 
 
-       <Projects/>
+       <Projects xCoord={this.state.xCoord} yCoord={this.state.yCoord}/>
         
         
         {/* <li>

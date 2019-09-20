@@ -17,15 +17,18 @@ body{
   /*background-color:black;*/
 }
 
-
 @media all and (min-width: 1024px) {
+
+  #year{
+    display:block;
+    position: absolute;
+  }
 
   #logo{
     height:300px;
     width:300px;
     display:block;
-    margin-left: auto;
-    margin-right: auto;
+    
   }
   
   .image{
@@ -43,6 +46,9 @@ body{
 
   #about{
     width:1% !important;
+    height:300px !important;
+    font-size: 3.0em !important;
+
   }
 
   .title{
@@ -61,14 +67,16 @@ body{
   }
 
   #attic{
+    width:1%;
     height:300px !important;
     font-size: 3.0em !important;
-
+    margin-top:2.2rem;
   }
 
   #about{
-    height:300px !important;
+    height:400px !important;
     font-size: 3.0em !important;
+    left-margin:5rem;
   }
 
   .banner{
@@ -83,8 +91,10 @@ body{
   ul{
     width:auto;
     /* display:inline-block; */
-    text-align: center;
-    margin:auto;
+    text-align: right;
+    margin-right:5rem;
+    margin-left:5rem;
+
     /* position:absolute; */
     /* left:27%; */
   }
@@ -137,10 +147,9 @@ body{
     top: 0;
     left: 0;
     right:0;
-    font-size: 1.3em;
     height:105px;
     width:10%;
-    margin:1.2em;
+    
     writing-mode: vertical-rl;
   }
 
@@ -148,7 +157,6 @@ body{
     position: absolute;
     top:0;
     right:0;
-    margin:1.2em;
     height:105px;
     writing-mode: vertical-rl;
     font-size: 1.3em;

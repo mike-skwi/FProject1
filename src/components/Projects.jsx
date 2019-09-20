@@ -61,7 +61,9 @@ class Projects extends React.Component {
                     
                     {project.title}
                 
-                    <YearAndImages        
+                    <YearAndImages
+                        xCoords={this.props.xCoords}
+                        yCoords={this.props.yCoords}        
                         //visible={this.state.hoveringOn}
                         projectName={project.title}
                         activeProject={this.state.activeProject}
