@@ -1,5 +1,8 @@
 import React from 'react';
-import GreenUnit from '../Images/greenunit.jpg'
+import GreenUnit from '../Images/greenunit.jpg';
+import { Spring } from 'react-spring';
+import Projects from './Projects.jsx';
+
 
 class Landing extends React.Component {
   constructor(props) {
@@ -49,24 +52,17 @@ class Landing extends React.Component {
 
     // console.log(e.target.innerText)
   }
+
   render() {
     return (
       <ul 
       class="projects">
-        <li>
-            <a 
-              onClick={this.getDataValue } data-value="Ratboys">
-              <div
-                onMouseLeave={this.mouseleave}
-                onMouseMove={this._onMouseMove} 
-                class="title">
-                  Ratboys
-              </div>
-              <div class="year"><p>2019</p></div>
-              <div class="image"><img id="greenUnit" src={GreenUnit}></img></div>
-            </a>
-          </li>
-        <li>
+
+
+       <Projects/>
+        
+        
+        {/* <li>
           <a onClick={this.getDataValue } data-value="Nike x Off-White">
             <div
               onMouseMove={this._onMouseMove}
@@ -185,7 +181,7 @@ class Landing extends React.Component {
             <div class="year">2019</div>
             <div class="image"><img></img></div>
           </a>
-        </li>
+        </li> */}
       </ul>
     );
   }

@@ -3,7 +3,8 @@ import './App.css';
 import Landing from './components/Landing'
 import Header from './components/Header'
 import AboutUs from './components/AboutUs';
-
+import { Spring } from 'react-spring';
+//import { Transition, animated, config } from 'react-spring/renderprops';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,8 +22,6 @@ class App extends React.Component {
     console.log(prevstate)
   }
 
-
-
   goToPage = (page) => {
     console.log("Hiiiit")
     this.setState(state => ({
@@ -30,7 +29,6 @@ class App extends React.Component {
       pageName:page
     }))
   }
-
 
   render() {
     if (this.state.pageName === "Landing"){
