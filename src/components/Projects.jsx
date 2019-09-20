@@ -1,10 +1,11 @@
 import React from 'react';
+import YearAndImages from './YearAndImages.jsx';
 
 class Projects extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            activeProject:"",
+            activeProject:{},
             hoveringOn:false
         }
         this.mouseEnter = this.mouseEnter.bind(this);
@@ -13,28 +14,35 @@ class Projects extends React.Component {
     }
     mouseEnter = (e) =>{
         this.setState({hoveringOn:true}, function () {
-            console.log(this.state.hoveringOn);
+            // console.log(this.state.hoveringOn);
         });
 
         this.setState({activeProject:e.target.innerText}, function () {
             console.log(this.state.activeProject)
         });
-        console.log("in")
     }
 
     mouseMove = (e) =>{
         this.setState({hoveringOn:true}, function () {
             console.log(this.state.hoveringOn);
             console.log(this.state.activeProject)
+            console.log(this.state.activeProject.year)
         });
-        console.log("moving")
+        this.setState({activeProject:e.target.innerText}, function () {
+            console.log(this.state.activeProject)
+        });
+
+        // animate here
+
     }
 
     mouseExit = (e) =>{
         this.setState({hoveringOn:false}, function () {
-            console.log(this.state.hoveringOn);
+
         });
-        console.log("out")
+        this.setState({activeProject:"none"}, function () {
+            
+        });
     }
 
     render(){
@@ -48,10 +56,17 @@ class Projects extends React.Component {
                 <div
                     onMouseEnter={this.mouseEnter}
                     onMouseLeave={this.mouseExit}
-                    onMouseMove={this.mouseMove}                
+                    //onMouseMove={this.mouseMove}                
                     className={"title"}>
                     
                     {project.title}
+                
+                    <YearAndImages        
+                        //visible={this.state.hoveringOn}
+                        projectName={project.title}
+                        activeProject={this.state.activeProject}
+                        year={project.year} 
+                        images={"a"}/>
                     {/* Set a style here <p style={}> */}
                     {/* <p>{project.year}</p> */}
                 </div>

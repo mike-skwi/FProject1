@@ -56,6 +56,7 @@ class Landing extends React.Component {
   render() {
     return (
       <ul 
+      // lowercase projects
       class="projects">
 
 
