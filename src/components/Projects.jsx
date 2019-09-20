@@ -15,15 +15,19 @@ class Projects extends React.Component {
         this.setState({hoveringOn:true}, function () {
             console.log(this.state.hoveringOn);
         });
+
+        this.setState({activeProject:e.target.innerText}, function () {
+            console.log(this.state.activeProject)
+        });
         console.log("in")
     }
 
     mouseMove = (e) =>{
         this.setState({hoveringOn:true}, function () {
             console.log(this.state.hoveringOn);
+            console.log(this.state.activeProject)
         });
         console.log("moving")
-
     }
 
     mouseExit = (e) =>{
@@ -45,12 +49,13 @@ class Projects extends React.Component {
                     onMouseEnter={this.mouseEnter}
                     onMouseLeave={this.mouseExit}
                     onMouseMove={this.mouseMove}                
-                    class="title">
+                    className={"title"}>
+                    
                     {project.title}
                     {/* Set a style here <p style={}> */}
                     {/* <p>{project.year}</p> */}
-                 </div>
-                 </a>
+                </div>
+                </a>
              </li>   
                     
                     )}
