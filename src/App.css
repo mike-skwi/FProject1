@@ -1,6 +1,8 @@
 /* #db5545  icon red*/
 /* #047cb4 icon blue*/
 
+
+
 @font-face{
   font-family: 'Eina';
   src: url('../src/fonts/eina-01-semibold.otf');
@@ -20,15 +22,18 @@ body{
 @media all and (min-width: 1024px) {
 
   #year{
-    display:block;
     position: absolute;
+    align-content: left;
+    text-align: left;
   }
 
   #logo{
+    
     height:300px;
     width:300px;
     display:block;
-    
+    position: absolute;
+    left:0%;
   }
   
   .image{
@@ -37,26 +42,26 @@ body{
     color:white;
   }
 
-  .year{
+  /* .year{
     position: relative;
     display:inline-block;
     margin-left: 2%;
     
-  }
+  } */
 
   #about{
     width:1% !important;
     height:300px !important;
     font-size: 3.0em !important;
-
+    
   }
 
   .title{
-    font-size: 2.5em;
+    font-size: 2em;
     width:auto;
     margin:auto;
     display:inline-block;
-    
+    color:#2a2f47;
   }
 
   .title:hover{
@@ -66,21 +71,79 @@ body{
 
   }
 
+  .videoInfoContainer{
+  }
+
+  #projectNameVideo{
+    font-size: 50px;
+    position: relative;
+    margin:0 auto;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom:.8%;
+  }
+
+  #projectVideoTitle{
+    font-size: 30px;
+    position: relative;
+    margin:0 auto;
+    width:30%;
+    text-align: center;
+    padding-top: 0%;
+
+  }
+
+  #projectVideo{
+    /* width:60rem; */
+    height:30rem;
+    background:black;
+    position:relative;
+    /* margin-left:25%;
+    margin-right:25%;
+    margin-top:10%; */
+    margin:0 auto;
+    width:50%;
+  }
+
+  #projectImageLeft{
+    position: relative;
+    justify-content:center;
+    margin-left:10%;
+    margin-right:10%;
+    
+  }
+
+  #videoImages{
+    margin:0 auto;
+    width:100%;
+    position:relative;
+  }
+
+  #projectImageRight{
+    position: relative;
+    margin-left:10%;
+    margin-right:10%;
+    
+  }
+
+
   #attic{
     width:1%;
     height:300px !important;
     font-size: 3.0em !important;
     margin-top:2.2rem;
+    color:#2a2f47;
   }
 
   #about{
     height:400px !important;
     font-size: 3.0em !important;
     left-margin:5rem;
+    color:#2a2f47;
+
   }
 
   .banner{
-    position:sticky !important;
     
   }
   
@@ -102,6 +165,12 @@ body{
   #image{
     /* left: 22%;     */
   }
+
+  #titleNameProjectList{
+    position: relative;
+
+  }
+
  }
  
 /*@media all and (min-width: 768px) and (max-width: 1024px) { }
@@ -110,6 +179,8 @@ body{
  
 @media all and (min-width: 800px) {
 
+
+  
 
   .projects{
 
@@ -121,6 +192,7 @@ body{
 
   ul{
     padding:0;
+    margin-bottom:10%;
     /* text-align: center; */
   }
 
@@ -149,7 +221,6 @@ body{
     right:0;
     height:105px;
     width:10%;
-    
     writing-mode: vertical-rl;
   }
 

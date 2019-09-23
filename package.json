@@ -7,7 +7,9 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "react-vimeo": "^2.0.0",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "start": "react-scripts start",

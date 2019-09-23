@@ -1,7 +1,6 @@
 import React from 'react';
 import { Spring, config } from 'react-spring/renderprops';
-
-
+import altLogo from '../Images/Alt_Logo.png'
 import logo from '../Images/Main_Logo.png'
 
 class Header extends React.Component {
@@ -28,7 +27,7 @@ class Header extends React.Component {
                     >
                         {props=>(
                             <div style={props}>
-                              {/* <img id="logo" src={logo}/> */}
+                              <img id="logo" src={logo}/>
                             </div>
                         )}
                     </Spring>

@@ -3,6 +3,8 @@ import './App.css';
 import Landing from './components/Landing'
 import Header from './components/Header'
 import AboutUs from './components/AboutUs';
+import IndivProject from './components/IndivProject.jsx';
+
 import { Spring } from 'react-spring';
 //import { Transition, animated, config } from 'react-spring/renderprops';
 
@@ -11,7 +13,8 @@ class App extends React.Component {
     super(props);
     this.state={
       imageActive:false,
-      pageName:"Landing"
+      pageName:"Project",
+      selectedProject:""
     }
     this.goToPage = this.goToPage.bind(this);
   }
@@ -30,6 +33,8 @@ class App extends React.Component {
     }))
   }
 
+
+  // Write a small transition in the beginning of each of these 
   render() {
     if (this.state.pageName === "Landing"){
       return (
@@ -50,9 +55,16 @@ class App extends React.Component {
           </header>
       </div>
     );
-
   }
+  else if (this.state.pageName === "Project"){
+    return (
+      <div className="App">
+          <Header/>
+            <IndivProject/>
+      </div>
+    );
   }
+}
 }
 
 export default App;

@@ -14,20 +14,19 @@ class YearAndImages extends React.Component {
             return(
                 <div class="yearAndImages"> 
                     <p id="year" style={yearStyle}>{this.props.year}</p>
+                    <span id="titleNameProjectList">Sponge sponge sponge</span>
                     {console.log(this.props.year)}
                     {/* <img src={GreenUnit}/> */}
                 </div>
-        );
-        }
+        );}
         return(null);
     }
 }
 
 const yearStyle = {
-    background:'red',
+    background:'#2a2f47',
     color:'white',
-    display:'inline-block'
-
+    opacity:'0.5', 
     // SHOULD display on cursor
 }
 

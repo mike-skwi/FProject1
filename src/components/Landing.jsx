@@ -18,7 +18,6 @@ class Landing extends React.Component {
     this.getDataValue = this.getDataValue.bind(this);
     this.mouseleave = this.mouseleave.bind(this);
   }
-
   componentDidUpdate(prevstate){
     console.log("< Component did update >")
   }
