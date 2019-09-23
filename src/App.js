@@ -13,7 +13,7 @@ class App extends React.Component {
     super(props);
     this.state={
       imageActive:false,
-      pageName:"About",
+      pageName:"Project",
       selectedProject:""
     }
     this.goToPage = this.goToPage.bind(this);

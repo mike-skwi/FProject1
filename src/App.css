@@ -57,7 +57,7 @@ body{
   }
 
   .title{
-    font-size: 2em;
+    font-size: 1.5em;
     width:auto;
     margin:auto;
     display:inline-block;
@@ -130,24 +130,29 @@ body{
     background-color:black;
   }
 
+  .fourImages{
+    margin-bottom: 2%;
+  }
+
   .videoImages{
     margin:0 auto;
     position: relative;
     align-content: center;
     width:85%;
-    padding-bottom:2%;
-    border-bottom:3px solid#2a2f47;
+    padding-top:4%;
+    /* padding-bottom:2%; */
+    /* border-bottom:3px solid#2a2f47; */
   }
 
   #creditTitle{
     font-size: 32px;
     /* width:80%; */
     font-weight:900 !important;
-    padding-bottom:2%;
+    /* padding-bottom:2%; */
   }
 
   .projectPageText{
-    padding-top:2%;
+    /* padding-top:2%; */
     margin:0 auto;
     font-size:20px;
     position:relative;
@@ -185,8 +190,8 @@ body{
   .aboutUsWords{
     position:relative;
     width:40%;
-    padding-left:30%;
-    padding-right:30%;
+    padding-left:29%;
+    padding-right:27%;
     font-size:20px;
     line-height: 105%;
     letter-spacing:1.5%;
@@ -219,13 +224,14 @@ body{
   }
   
   li{
+    font-size:26px;
     width:auto;
   }
 
   ul{
-    width:auto;
+    width:0 auto;
     /* display:inline-block; */
-    text-align: right;
+    text-align: center;
     margin-right:5rem;
     margin-left:5rem;
 
@@ -262,15 +268,14 @@ body{
   }
 
   ul{
-    padding:0;
     margin-bottom:10%;
     /* text-align: center; */
   }
 
   li{
     list-style-type: none;
-    margin-bottom:11px;
-
+    margin-bottom:.3%;
+    margin-top:.3%;
   }
 
   a{
