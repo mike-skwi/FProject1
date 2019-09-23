@@ -9,6 +9,7 @@ class Landing extends React.Component {
     super(props);
     this.state = {
       focusing:false,
+      shouldUpdate:false,
       chosenProject:"",
       hoveredProject:"",
       xCoord:0,
@@ -17,15 +18,26 @@ class Landing extends React.Component {
     this._onMouseMove = this._onMouseMove.bind(this);
     this.getDataValue = this.getDataValue.bind(this);
     this.mouseleave = this.mouseleave.bind(this);
-    this.setParentPage = this.setParentPage(this);
+    // this.setParentPage = this.setParentPage(this);
   }
 
   componentDidUpdate(prevstate){
     console.log("< Component did update >")
+    if(this.state.shouldUpdate == true){
+      console.log("should update")
+      this.props.goTo(this.state.chosenProject)
+      this.setState({
+        shouldUpdate:false
+      })
+    }
+    // if(this.prevstate.chosenProject !== this.state.chosenProject && ){
+    //   console.log("ahh")
+    // }
   }
 
   getDataValue(e){
     let clickedLink = e.currentTarget;
+    console.log("ah")
     let data = clickedLink.getAttribute('data-value')
     this.setState(state => ({
       //chosenProject:this.props.goTo("test")
@@ -38,7 +50,13 @@ class Landing extends React.Component {
   }
   
   setParentPage = (page) =>{
-    console.log(page);
+    console.log("page:",page)
+    this.setState({
+      chosenProject:page,
+      shouldUpdate:true
+    })
+    // console.log("This should not be undefined: ")
+    // console.log(page);
   }
 
 
@@ -68,8 +86,7 @@ class Landing extends React.Component {
       // lowercase projects
         class="projects">
        <Projects 
-        goTo={this.setParentPage}
-        test={"nice"}
+        setNewPage={(page) => this.setParentPage(page) }
         xCoord={this.state.xCoord} 
         yCoord={this.state.yCoord}/>
       </ul>

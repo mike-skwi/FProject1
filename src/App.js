@@ -33,13 +33,15 @@ class App extends React.Component {
       // pageName:this.selectedProject.title
     })
     console.log("Set to true")
+    console.log("Selected project:")
+    console.log(this.state.selectedProject)
     // this.setState({pageName:page.title})
   }
 
   componentDidUpdate =()=>{
     console.log("2");
     console.log(this.state.selectedProject.title);
-    if(this.state.selectedProject !== "" && this.state.shouldUpdate === true){
+     if(this.state.selectedProject !== "" && this.state.shouldUpdate === true){
       this.setState({
         pageName:this.state.selectedProject.title,
         shouldUpdate:false
@@ -74,7 +76,7 @@ class App extends React.Component {
     return (
       <div className="App">
           <Header goTo={this.goToPage}/>
-          <IndivProject/>
+          <IndivProject name={this.state.selectedProject}/>
       </div>
     );
   }

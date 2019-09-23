@@ -8,7 +8,6 @@ class Projects extends React.Component {
             activeProject:"",
             hoveringOn:false
         }
-
         this.mouseEnter = this.mouseEnter.bind(this);
         this.mouseExit = this.mouseExit.bind(this);
         this.mouseMove = this.mouseMove.bind(this);
@@ -17,7 +16,8 @@ class Projects extends React.Component {
 
     handleClick = (value) =>{
         // send project object up 
-        console.log(this.props)
+        console.log(value)
+        this.props.setNewPage(value)
         // this.props.goTo(value)
     }
 
