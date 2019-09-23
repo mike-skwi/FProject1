@@ -13,7 +13,7 @@ class App extends React.Component {
     super(props);
     this.state={
       imageActive:false,
-      pageName:"Project",
+      pageName:"About",
       selectedProject:""
     }
     this.goToPage = this.goToPage.bind(this);
@@ -60,7 +60,7 @@ class App extends React.Component {
     return (
       <div className="App">
           <Header/>
-            <IndivProject/>
+          <IndivProject/>
       </div>
     );
   }

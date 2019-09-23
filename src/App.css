@@ -74,24 +74,41 @@ body{
   .videoInfoContainer{
   }
 
+  #credits{
+    /* width:85% */
+    margin-bottom:5%;
+  }
+
   #projectNameVideo{
-    font-size: 50px;
+    font-size: 60px;
     position: relative;
     margin:0 auto;
     text-align: center;
-    padding-top: 8%;
+    padding-top: 5%;
     padding-bottom:.8%;
+    letter-spacing: .3rem;
+    color:#2a2f47;
   }
 
   #projectVideoTitle{
+  }
+
+  .biggerProjectText{
     font-size: 30px;
     position: relative;
     margin:0 auto;
+    color:#2a2f47;
     width:30%;
     text-align: center;
     padding-top: 0%;
+    margin-top:1%;
+    margin-bottom:2%;
+    letter-spacing: .2rem;
+    /* background:#047cb4; */
+    border-bottom:3px solid#2a2f47;
 
   }
+
 
   #projectVideo{
     /* width:60rem; */
@@ -107,25 +124,47 @@ body{
 
   #projectImageLeft{
     position: relative;
-    justify-content:center;
-    margin-left:10%;
-    margin-right:10%;
-    
+    width: 640px;
+    height: 360px;
+    width:47%;
+    background-color:black;
   }
 
-  #videoImages{
+  .videoImages{
     margin:0 auto;
-    width:100%;
-    position:relative;
+    position: relative;
+    align-content: center;
+    width:85%;
+    padding-bottom:2%;
+    border-bottom:3px solid#2a2f47;
   }
+
+  #creditTitle{
+    font-size: 32px;
+    /* width:80%; */
+    font-weight:900 !important;
+    padding-bottom:2%;
+  }
+
+  .projectPageText{
+    padding-top:2%;
+    margin:0 auto;
+    font-size:20px;
+    position:relative;
+    width:85%;
+    text-align: left;
+    letter-spacing: .05rem;
+  }
+
 
   #projectImageRight{
     position: relative;
-    margin-left:10%;
-    margin-right:10%;
-    
+    width: 640px;
+    height: 360px;
+    width:47%;
+    margin-left:6%;
+    background-color:black;
   }
-
 
   #attic{
     width:1%;
@@ -138,8 +177,40 @@ body{
   #about{
     height:400px !important;
     font-size: 3.0em !important;
-    left-margin:5rem;
+    margin-left:5rem;
     color:#2a2f47;
+    display:none;
+  }
+
+  .aboutUsWords{
+    position:relative;
+    width:40%;
+    padding-left:30%;
+    padding-right:30%;
+    font-size:20px;
+    line-height: 105%;
+    letter-spacing:1.5%;
+  }
+
+  .aboutContainer{
+    position:relative;
+    
+  }
+
+  #aboutUs{
+    margin-top:0% !important;
+  }
+
+  #aboutUsImage{
+    align-content: center;
+    width:40%;
+    height:10%;
+    margin-left:30%;
+    margin-right:30%;
+    position:relative;
+    margin-top:1%;
+    padding-bottom:2%;
+    border-bottom:3px solid#2a2f47;
 
   }
 
@@ -251,9 +322,9 @@ body{
   }
 
   #aboutUs{
-    text-align: center;
+    /* text-align: center;
     margin:0;
-    margin-bottom:10px;
+    margin-bottom:10px; */
   }
 
   .year{
