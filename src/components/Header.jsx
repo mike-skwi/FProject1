@@ -4,8 +4,21 @@ import altLogo from '../Images/Alt_Logo.png'
 import logo from '../Images/Main_Logo.png'
 
 class Header extends React.Component {
-    constructor(props) {
+  constructor(props) {
       super(props);
+      this.state={
+        destination:""
+      }
+      this.handleClick = this.handleClick.bind(this);
+      this.handleClickAbout = this.handleClickAbout.bind(this)
+    }
+
+    handleClickAbout = (e) =>{
+      this.props.goTo(about);
+    }
+
+    handleClick = (e) =>{
+      this.props.goTo(landing);
     }
     
     render() {
@@ -26,8 +39,8 @@ class Header extends React.Component {
                         config={{delay:100, duration:100}}
                     >
                         {props=>(
-                            <div style={props}>
-                              <img id="logo" src={logo}/>
+                            <div  style={props}>
+                              <img onClick={this.handleClick} id="logo" src={logo}/>
                             </div>
                         )}
                     </Spring>
@@ -43,10 +56,6 @@ class Header extends React.Component {
                             </div>
                         )}
                     </Spring>
-
-
-
-                
                 <Spring
                         from={{rotation:"0deg"}}
                         to={{rotation:"360deg"}}
@@ -55,7 +64,7 @@ class Header extends React.Component {
                         {props=>(
                             <div style={props}>
                                 {/* notice the id of about us */}
-                                <a id="attic">About Us</a>
+                                <a onClick={this.handleClickAbout} id="attic">About Us</a>
                             </div>
                         )}
                     </Spring>
@@ -70,7 +79,15 @@ class Header extends React.Component {
       );
     }
   }
-  
+
+  const landing = {
+    title:"Landing"
+  }  
+
+  const about = {
+    title:"About"
+  }
+
   export default Header;
   
 

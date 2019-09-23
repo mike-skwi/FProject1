@@ -19,6 +19,7 @@ class Landing extends React.Component {
     this.mouseleave = this.mouseleave.bind(this);
     this.setParentPage = this.setParentPage(this);
   }
+
   componentDidUpdate(prevstate){
     console.log("< Component did update >")
   }
@@ -36,8 +37,8 @@ class Landing extends React.Component {
     // just cant pass it upwards
   }
   
-  setParentPage(page){
-    this.props.goTo(page);
+  setParentPage = (page) =>{
+    console.log(page);
   }
 
 
@@ -68,6 +69,7 @@ class Landing extends React.Component {
         class="projects">
        <Projects 
         goTo={this.setParentPage}
+        test={"nice"}
         xCoord={this.state.xCoord} 
         yCoord={this.state.yCoord}/>
       </ul>

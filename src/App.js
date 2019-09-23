@@ -13,8 +13,9 @@ class App extends React.Component {
     super(props);
     this.state={
       imageActive:false,
-      pageName:"Landing",
-      selectedProject:""
+      pageName:"Project",
+      selectedProject:"",
+      shouldUpdate:false
     }
     this.goToPage = this.goToPage.bind(this);
   }
@@ -25,8 +26,25 @@ class App extends React.Component {
     console.log(prevstate)
   }
 
-  goToPage = (page) => {
-    this.setState({selectedProject:page})
+  goToPage = (page) =>{
+    this.setState({
+      selectedProject:page,
+      shouldUpdate:true
+      // pageName:this.selectedProject.title
+    })
+    console.log("Set to true")
+    // this.setState({pageName:page.title})
+  }
+
+  componentDidUpdate =()=>{
+    console.log("2");
+    console.log(this.state.selectedProject.title);
+    if(this.state.selectedProject !== "" && this.state.shouldUpdate === true){
+      this.setState({
+        pageName:this.state.selectedProject.title,
+        shouldUpdate:false
+      })
+    }
   }
 
 
@@ -36,7 +54,7 @@ class App extends React.Component {
       return (
       <div className="App">
         <header className="App-header">
-          <Header/>
+          <Header goTo={this.goToPage}/>
           <Landing goTo={this.goToPage}/>
         </header>
       </div>
@@ -46,7 +64,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Header/>
+          <Header goTo={this.goToPage}/>
             <AboutUs/>
         </header>
       </div>
@@ -55,7 +73,7 @@ class App extends React.Component {
   else if (this.state.pageName === "Project"){
     return (
       <div className="App">
-          <Header/>
+          <Header goTo={this.goToPage}/>
           <IndivProject/>
       </div>
     );

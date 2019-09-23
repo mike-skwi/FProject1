@@ -28,7 +28,7 @@ body{
   }
 
   #logo{
-    
+    z-index:5;
     height:300px;
     width:300px;
     display:block;
@@ -88,6 +88,7 @@ body{
     padding-bottom:.8%;
     letter-spacing: .3rem;
     color:#2a2f47;
+    z-index:-5;
   }
 
   #projectVideoTitle{
@@ -205,9 +206,11 @@ body{
   #aboutUs{
     margin-top:0% !important;
     font-size:55px;
+    z-index:5;
   }
 
   #aboutUsImage{
+    z-index:-5;
     align-content: center;
     width:40%;
     height:10%;

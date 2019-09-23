@@ -5,12 +5,20 @@ class Projects extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            activeProject:{},
+            activeProject:"",
             hoveringOn:false
         }
+
         this.mouseEnter = this.mouseEnter.bind(this);
         this.mouseExit = this.mouseExit.bind(this);
         this.mouseMove = this.mouseMove.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick = (value) =>{
+        // send project object up 
+        console.log(this.props)
+        // this.props.goTo(value)
     }
 
     mouseEnter = (e) =>{
@@ -49,17 +57,22 @@ class Projects extends React.Component {
     render(){
         return(
             <div class="Projects"> 
-                {projectObject.map((project)=>
+                {projectObject.map((project, id)=>
+
                  <li>
                  <a 
                     // {/// get getdatavalue from a prop}
-                    onClick={this.getDataValue } 
-                    data-value="11111111">
+                    data_value={project}
+                    >
                 <div
+                    key={id}
+                    onClick={() => this.handleClick(project) }
+
                     onMouseEnter={this.mouseEnter}
                     onMouseLeave={this.mouseExit}
                     //onMouseMove={this.mouseMove}                
-                    className={"title"}>
+                    className={"title"}
+                     >
                     
                     {project.title}
                 
@@ -76,7 +89,7 @@ class Projects extends React.Component {
                 </div>
                 </a>
              </li>   
-                    
+       
                     )}
                 
             </div>
