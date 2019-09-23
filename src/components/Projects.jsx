@@ -12,6 +12,7 @@ class Projects extends React.Component {
         this.mouseExit = this.mouseExit.bind(this);
         this.mouseMove = this.mouseMove.bind(this);
     }
+
     mouseEnter = (e) =>{
         this.setState({hoveringOn:true}, function () {
             // console.log(this.state.hoveringOn);
@@ -52,7 +53,8 @@ class Projects extends React.Component {
                  <li>
                  <a 
                     // {/// get getdatavalue from a prop}
-                    onClick={this.getDataValue } data-value="11111111">
+                    onClick={this.getDataValue } 
+                    data-value="11111111">
                 <div
                     onMouseEnter={this.mouseEnter}
                     onMouseLeave={this.mouseExit}

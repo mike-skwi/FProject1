@@ -17,6 +17,7 @@ class Landing extends React.Component {
     this._onMouseMove = this._onMouseMove.bind(this);
     this.getDataValue = this.getDataValue.bind(this);
     this.mouseleave = this.mouseleave.bind(this);
+    this.setParentPage = this.setParentPage(this);
   }
   componentDidUpdate(prevstate){
     console.log("< Component did update >")
@@ -35,6 +36,11 @@ class Landing extends React.Component {
     // just cant pass it upwards
   }
   
+  setParentPage(page){
+    this.props.goTo(page);
+  }
+
+
   mouseleave(e){
     this.setState({ xCoord: 0, yCoord: 0, hoveredProject:"" });
 
@@ -52,12 +58,18 @@ class Landing extends React.Component {
     // console.log(e.target.innerText)
   }
 
+
+
+
   render() {
     return (
       <ul 
       // lowercase projects
-      class="projects">
-       <Projects xCoord={this.state.xCoord} yCoord={this.state.yCoord}/>
+        class="projects">
+       <Projects 
+        goTo={this.setParentPage}
+        xCoord={this.state.xCoord} 
+        yCoord={this.state.yCoord}/>
       </ul>
     );
   }

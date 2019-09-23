@@ -13,7 +13,7 @@ class App extends React.Component {
     super(props);
     this.state={
       imageActive:false,
-      pageName:"Project",
+      pageName:"Landing",
       selectedProject:""
     }
     this.goToPage = this.goToPage.bind(this);
@@ -26,11 +26,7 @@ class App extends React.Component {
   }
 
   goToPage = (page) => {
-    console.log("Hiiiit")
-    this.setState(state => ({
-      //chosenProject:this.props.goTo("test")
-      pageName:page
-    }))
+    this.setState({selectedProject:page})
   }
 
 
@@ -52,7 +48,7 @@ class App extends React.Component {
         <header className="App-header">
           <Header/>
             <AboutUs/>
-          </header>
+        </header>
       </div>
     );
   }

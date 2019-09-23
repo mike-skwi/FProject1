@@ -14,7 +14,9 @@ class IndivProject extends React.Component {
         return(
             <div class="videoInfoContainer"> 
                 <h1 id="projectNameVideo">Nike x Off-White</h1>
-                <div id="projectVideo"></div>
+                <div id="projectVideo">
+                    <iframe width="100%" height="100%" src="https://player.vimeo.com/video/109041199"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+           </div>
                 <h2 id="projectVideoTitle" class="biggerProjectText" >2019</h2>
                 <p id="projectDescription" class="projectPageText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur fermentum blandit. Nulla sit amet dolor magna. Etiam aliquam diam non diam vestibulum, ut molestie massa viverra. Aenean quis ante a enim ultrices accumsan lobortis auctor nisi. Maecenas egestas libero vitae tristique condimentum. Ut quis mi tortor. Nunc urna urna, ullamcorper non justo a, efficitur finibus neque.</p>
 

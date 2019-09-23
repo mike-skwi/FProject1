@@ -113,7 +113,7 @@ body{
   #projectVideo{
     /* width:60rem; */
     height:30rem;
-    background:black;
+    /* background:black; */
     position:relative;
     /* margin-left:25%;
     margin-right:25%;
@@ -204,6 +204,7 @@ body{
 
   #aboutUs{
     margin-top:0% !important;
+    font-size:55px;
   }
 
   #aboutUsImage{
