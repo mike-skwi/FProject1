@@ -19,13 +19,26 @@ body{
   /*background-color:black;*/
 }
 
+
 @media all and (min-width: 1024px) {
 
   #year{
+    font-size: 20px;
     position: absolute;
-    align-content: left;
-    text-align: left;
+    background:black;
+    color:white;
+    
+    /* align-content: left;
+    text-align: left; */
   }
+
+  .yearAndImages{
+    margin:0 auto;
+    width:100%;
+    position:relative;
+    height:100%;
+  }
+  
 
   #logo{
     z-index:5;
@@ -261,7 +274,10 @@ body{
 @media all and (min-width: 800px) {
 
 
-  
+  #logo{
+
+  }
+
 
   .projects{
 
@@ -280,6 +296,11 @@ body{
     list-style-type: none;
     margin-bottom:.3%;
     margin-top:.3%;
+    
+  }
+
+  li:hover{
+    font-size:25px;
   }
 
   a{
@@ -350,8 +371,8 @@ body{
   }
 
   img{
-    height:200px;
-    width:200px;
+    /* height:200px;
+    width:200px; */
   }
 
   .aboutContainer{

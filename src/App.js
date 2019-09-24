@@ -13,7 +13,7 @@ class App extends React.Component {
     super(props);
     this.state={
       imageActive:false,
-      pageName:"Project",
+      pageName:"Landing",
       selectedProject:"",
       shouldUpdate:false
     }
@@ -46,7 +46,9 @@ class App extends React.Component {
         pageName:this.state.selectedProject.title,
         shouldUpdate:false
       })
-    }
+      window.scrollTo(0, 0
+        )}
+
   }
 
 
@@ -72,11 +74,11 @@ class App extends React.Component {
       </div>
     );
   }
-  else if (this.state.pageName === "Project"){
+  else{
     return (
       <div className="App">
           <Header goTo={this.goToPage}/>
-          <IndivProject name={this.state.selectedProject}/>
+          <IndivProject obj={this.state.selectedProject}/>
       </div>
     );
   }
