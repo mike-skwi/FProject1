@@ -33,6 +33,16 @@ body{
     text-align: left; */
   }
 
+  #yearImage{
+    position:absolute;
+    left:1%;
+    bottom:1%;
+    width:16rem;
+    z-index: -2;
+  }
+
+
+
   .yearAndImages{
     margin:0 auto;
     width:100%;
@@ -279,7 +289,7 @@ body{
 
   li:hover{
     opacity:.8;
-    
+    z-index:5;
     font-size:27px;
   }
 
@@ -354,12 +364,38 @@ body{
 
  }
  
-/* @media all and (min-width: 768px) and (max-width: 1024px) { }
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+  #logo{
+    width:30%;
+    margin:0 auto;
+    
+  }
+
+}
  
 @media all and (min-width: 480px) and (max-width: 768px) { 
   img{
+
   }
-} */
+
+  #logo{
+    width:30%;
+    margin:0 auto;
+    
+  }
+
+  ul{
+    margin-bottom:10%;
+    /* text-align: center; */
+  }
+
+  li{
+    list-style-type: none;
+    font-size:40px;
+    text-align: center;
+  }
+
+}
  
 @media only screen
   and (min-device-width: 320px) 

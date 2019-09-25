@@ -15,8 +15,7 @@ class YearAndImages extends React.Component {
                 <div class="yearAndImages"> 
                     <span id="year" style={yearStyle}>{this.props.year}</span>
                     {/* <span id="titleNameProjectList">Sponge sponge sponge</span> */}
-                    {console.log(this.props.year)}
-                    {/* <img src={GreenUnit}/> */}
+                    <img id="yearImage" src={GreenUnit}/>
                 </div>
         );}
         return(null);
