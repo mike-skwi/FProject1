@@ -119,7 +119,7 @@ body{
     margin-bottom:2%;
     letter-spacing: .2rem;
     /* background:#047cb4; */
-    border-bottom:3px solid#2a2f47;
+    /* border-bottom:3px solid#2a2f47; */
 
   }
 
@@ -232,7 +232,7 @@ body{
     position:relative;
     margin-top:1%;
     padding-bottom:2%;
-    border-bottom:3px solid#2a2f47;
+    /* border-bottom:3px solid#2a2f47; */
 
   }
 
@@ -241,8 +241,6 @@ body{
   }
   
   li{
-    font-size:26px;
-    width:auto;
   }
 
   ul{
@@ -265,28 +263,6 @@ body{
 
   }
 
- }
- 
-/*@media all and (min-width: 768px) and (max-width: 1024px) { }
- 
-@media all and (min-width: 480px) and (max-width: 768px) { } */
- 
-@media all and (min-width: 800px) {
-
-
-  #logo{
-
-  }
-
-
-  .projects{
-
-  }
-
-  .title{
-    
-  }
-
   ul{
     margin-bottom:10%;
     /* text-align: center; */
@@ -296,7 +272,8 @@ body{
     list-style-type: none;
     margin-bottom:.3%;
     margin-top:.3%;
-    
+    font-size:26px;
+    width:auto;
   }
 
   li:hover{
@@ -323,6 +300,7 @@ body{
     height:105px;
     width:10%;
     writing-mode: vertical-rl;
+    display:none;
   }
 
   #attic{
@@ -370,10 +348,132 @@ body{
     padding-left:20%;
   }
 
+
+ }
+ 
+/* @media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { 
   img{
-    /* height:200px;
-    width:200px; */
   }
+} */
+ 
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  img{
+    /* max-width:30%; */
+    width:100%;
+    height:100%;
+  }
+
+  body{
+    
+  }
+
+  #logo{
+    width:75%;
+    position:absolute;
+    left:30%;
+    top:1%;
+    z-index:-3;
+  }
+
+  .projects{
+
+  }
+
+  .title{
+    
+  }
+
+  ul{
+    margin-bottom:10%;
+    /* text-align: center; */
+  }
+
+  li{
+    list-style-type: none;
+    margin-bottom:.3%;
+    margin-top:.3%;
+    margin-top:5%;
+  }
+
+  /* li:hover{
+    font-size:25px;
+  } */
+
+  a{
+    font-size: 2em;
+    letter-spacing: .07em;
+    font-weight: 100;
+    margin:0;
+    padding-top:0px;
+    text-decoration: none;
+    height:50px;
+    width:50px;
+    
+  }
+
+  #about{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    height:105px;
+    width:10%;
+    writing-mode: vertical-rl;
+    display:none;
+
+  }
+
+  #attic{
+    position: absolute;
+    top:0;
+    right:0;
+    height:105px;
+    writing-mode: vertical-rl;
+    font-size: 1.3em;
+    letter-spacing:2px;
+  }
+
+  /* .title:active{
+    background-color:black;
+    position: relative;
+    color:white;
+  } */
+
+  #aboutContainer{
+    margin-left:24.9px;
+    margin-right:24.9px;
+  }
+
+  .aboutUsWords{
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+  #aboutUs{
+    /* text-align: center;
+    margin:0;
+    margin-bottom:10px; */
+  }
+
+  .year{
+    /* display:none; */
+  }
+
+  .image{
+    /* display: none; */
+  }
+
+  .banner{
+    padding-right: 20%;
+    padding-left:20%;
+  }
+
 
   .aboutContainer{
     
