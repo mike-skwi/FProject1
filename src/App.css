@@ -25,7 +25,8 @@ body{
   #year{
     font-size: 20px;
     position: absolute;
-    background:black;
+    left:1%;
+    background:#2a2f47;
     color:white;
     
     /* align-content: left;
@@ -114,9 +115,9 @@ body{
     color:#2a2f47;
     width:30%;
     text-align: center;
-    padding-top: 0%;
+    padding-top: 5%;
     margin-top:1%;
-    margin-bottom:2%;
+    /* margin-bottom:2%; */
     letter-spacing: .2rem;
     /* background:#047cb4; */
     /* border-bottom:3px solid#2a2f47; */
@@ -231,7 +232,7 @@ body{
     margin-right:30%;
     position:relative;
     margin-top:1%;
-    padding-bottom:2%;
+    /* padding-bottom:2%; */
     /* border-bottom:3px solid#2a2f47; */
 
   }
@@ -277,7 +278,9 @@ body{
   }
 
   li:hover{
-    font-size:25px;
+    opacity:.8;
+    
+    font-size:27px;
   }
 
   a{
@@ -364,25 +367,34 @@ body{
   and (-webkit-min-device-pixel-ratio: 2) {
 
   img{
-    /* max-width:30%; */
-    width:100%;
-    height:100%;
+    /* width:100%;
+    height:100%; */
   }
 
   body{
     
   }
 
+  #aboutUsImage{
+    width:85%;
+    margin:0 auto;
+    margin-left:5%;
+  }
+
+  #projectVideo{
+    width:90%;
+  }
+
   #logo{
     width:75%;
     position:absolute;
-    left:30%;
+    left:25%;
     top:1%;
-    z-index:-3;
+    z-index:1;
   }
 
   .projects{
-
+    padding-left:0px;
   }
 
   .title{
@@ -396,9 +408,11 @@ body{
 
   li{
     list-style-type: none;
-    margin-bottom:.3%;
-    margin-top:.3%;
-    margin-top:5%;
+    /* margin-bottom:.3%; */
+    /* margin-top:.3%;
+    margin-top:5%; */
+
+    font-size:20px;
   }
 
   /* li:hover{
@@ -434,9 +448,11 @@ body{
     top:0;
     right:0;
     height:105px;
-    writing-mode: vertical-rl;
-    font-size: 1.3em;
+    font-size: 50px;
     letter-spacing:2px;
+    background:blue;
+    width:100%;
+
   }
 
   /* .title:active{
@@ -459,6 +475,7 @@ body{
     /* text-align: center;
     margin:0;
     margin-bottom:10px; */
+    display:none;
   }
 
   .year{
@@ -472,6 +489,10 @@ body{
   .banner{
     padding-right: 20%;
     padding-left:20%;
+  }
+
+  .headbanner{
+    padding-bottom:35%;
   }
 
 

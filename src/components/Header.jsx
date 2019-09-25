@@ -23,10 +23,10 @@ class Header extends React.Component {
     
     render() {
       return (
-        <div class="banner">
+        <div class="headbanner">
 
             <Spring
-            from={{opacity:0, marginTop:-500}}
+            from={{opacity:0, marginTop:-300}}
             to={{opacity:1, marginTop:0}}
             config={{tension:150,friction:10, precision:1}}
             >
@@ -36,8 +36,7 @@ class Header extends React.Component {
                 <Spring
                         from={{marginTop:-500}}
                         to={{marginTop:0}}
-                        config={{delay:100, duration:100}}
-                    >
+                        config={{delay:100, duration:100}}>
                         {props=>(
                             <div  style={props}>
                               <img onClick={this.handleClick} id="logo" src={logo}/>
