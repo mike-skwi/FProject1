@@ -40,6 +40,7 @@ class Header extends React.Component {
                         {props=>(
                             <div  style={props}>
                               <img onClick={this.handleClick} id="logo" src={logo}/>
+                              <p id="backText">  Back</p>
                             </div>
                         )}
                     </Spring>

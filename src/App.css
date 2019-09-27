@@ -25,7 +25,7 @@ body{
   #year{
     font-size: 20px;
     position: absolute;
-    left:1%;
+    left:0%;
     background:#2a2f47;
     color:white;
     
@@ -41,7 +41,10 @@ body{
     z-index: -2;
   }
 
-
+  #backText{
+    font-size: 5%;
+    position: relative;
+  }
 
   .yearAndImages{
     margin:0 auto;
@@ -89,6 +92,9 @@ body{
   }
 
   .title:hover{
+    background-color:#2a2f47;
+    color:white;
+    opacity:.8;
   }
 
   .title:active{
@@ -327,7 +333,7 @@ body{
   }
 
   .title:active{
-    background-color:black;
+    background-color:#2a2f47;
     position: relative;
     color:white;
   }
@@ -362,6 +368,7 @@ body{
   }
 
 
+
  }
  
 @media all and (min-width: 768px) and (max-width: 1024px) { 
@@ -369,6 +376,31 @@ body{
     width:30%;
     margin:0 auto;
     
+  }
+
+  .headbanner{
+    margin:0 auto;
+    position:relative;
+    padding:0;
+  }
+
+  .aboutContainer{
+    position:absolute;
+  }
+
+  #aboutUsImage{
+    position: relative;
+    width:60%;
+    margin:0 auto;
+    right:5%;
+    left:5%;
+  }
+
+  ul{
+    padding-top:0;
+    font-size:40px;
+    text-align: center;
+    list-style:none;
   }
 
 }
@@ -415,6 +447,7 @@ body{
     width:85%;
     margin:0 auto;
     margin-left:5%;
+    margin-top:5%;
   }
 
   #projectVideo{
@@ -423,10 +456,11 @@ body{
 
   #logo{
     width:75%;
-    position:absolute;
+    position: absolute;;
     left:25%;
-    top:1%;
-    z-index:1;
+    bottom:0%;
+    z-index:0;
+    opacity:.4;
   }
 
   .projects{
@@ -483,11 +517,13 @@ body{
     position: absolute;
     top:0;
     right:0;
-    height:105px;
+    height:auto;
     font-size: 50px;
+    margin-bottom:10%;
     letter-spacing:2px;
-    background:blue;
+    background:#2a2f47;
     width:100%;
+    color: #f3b7ba;
 
   }
 
@@ -528,7 +564,7 @@ body{
   }
 
   .headbanner{
-    padding-bottom:35%;
+    padding-bottom:10%;
   }
 
 
