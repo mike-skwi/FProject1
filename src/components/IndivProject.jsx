@@ -32,7 +32,7 @@ class IndivProject extends React.Component {
                 <div id="projectVideo">
                     <iframe width="100%" height="100%" src={this.state.activeProject.video}  frameborder="0" allow="autoplay; fullscreen"></iframe>
            </div>
-                <h2 id="projectVideoTitle" class="biggerProjectText" >{this.state.activeProject.year}</h2>
+                <h2 id="projectVideoTitle" class="biggerProjectText" >{this.state.activeProject.trackTitle}</h2>
                 <p id="projectDescription" class="projectPageText">{this.state.activeProject.description}</p>
 
                 <div class="videoImages">
