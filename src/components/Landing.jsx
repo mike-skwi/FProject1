@@ -13,7 +13,7 @@ class Landing extends React.Component {
       chosenProject:"",
       hoveredProject:"",
       xCoord:0,
-      yCoord:0
+      yCoord:0,
     }
     this._onMouseMove = this._onMouseMove.bind(this);
     this.getDataValue = this.getDataValue.bind(this);
@@ -62,7 +62,8 @@ class Landing extends React.Component {
 
   mouseleave(e){
     this.setState({ xCoord: 0, yCoord: 0, hoveredProject:"" });
-
+    // when done with the hover method, set image appear to false
+    
   }
 
   // this is where the picture animation will happen
@@ -72,7 +73,9 @@ class Landing extends React.Component {
       yCoord: e.nativeEvent.offsetY, 
       hoveredProject:e.target.innerText 
     });
+    if (this.state.pictureOn == true){
 
+    }
 
     // console.log(e.target.innerText)
   }
@@ -92,6 +95,10 @@ class Landing extends React.Component {
       </ul>
     );
   }
+}
+
+let cursor = {
+  
 }
 
 export default Landing;

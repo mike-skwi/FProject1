@@ -23,7 +23,7 @@ body{
 @media all and (min-width: 1024px) {
 
   #year{
-    font-size: 20px;
+    font-size: 25px;
     position: absolute;
     left:0%;
     background:#2a2f47;
@@ -35,22 +35,23 @@ body{
 
   #yearImage{
     position:absolute;
-    left:1%;
+    left:0%;
     bottom:1%;
     width:16rem;
-    z-index: -2;
+    /* z-index: -2; */
   }
 
   #backText{
     font-size: 5%;
     position: relative;
+    
   }
 
   .yearAndImages{
     margin:0 auto;
     width:100%;
-    position:relative;
     height:100%;
+    position:absolute;
   }
   
 
@@ -158,7 +159,6 @@ body{
     width: 640px;
     height: 360px;
     width:47%;
-    background-color:black;
   }
 
   .fourImages{
@@ -199,7 +199,6 @@ body{
     height: 360px;
     width:47%;
     margin-left:6%;
-    background-color:black;
   }
 
   #attic{

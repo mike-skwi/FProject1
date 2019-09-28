@@ -14,6 +14,7 @@ class YearAndImages extends React.Component {
             return(
                 <div class="yearAndImages"> 
                     <span id="year" style={yearStyle}>{this.props.year}</span>
+                    {/* <span id="hoverImage" style={imgStyle}>{GreenUnit}</span> */}
                     {/* <span id="titleNameProjectList">Sponge sponge sponge</span> */}
                     {/* <img id="yearImage" src={GreenUnit}/> */}
                 </div>
@@ -27,7 +28,8 @@ const yearStyle = {
 }
 
 const imgStyle = {
-
+    width:'500px',
+    height:'500px',
 }
 
 export default YearAndImages;
