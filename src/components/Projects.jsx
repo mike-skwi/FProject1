@@ -60,7 +60,7 @@ class Projects extends React.Component {
             <div class="Projects"> 
                 {projectObject.map((project, id)=>
 
-                 <li>
+                 <li >
                  <a 
                     // {/// get getdatavalue from a prop}
                     data_value={project}
@@ -78,9 +78,16 @@ class Projects extends React.Component {
                     {project.title}
                 
                     <YearAndImages
+                    
                         xCoords={this.props.xCoords}
                         yCoords={this.props.yCoords}        
                         //visible={this.state.hoveringOn}
+
+                        img1={project.image1}
+                        img2={project.image2}
+                        img3={project.image3}
+                        img4={project.image4}
+
                         projectName={project.title}
                         activeProject={this.state.activeProject}
                         year={project.year} 
@@ -107,8 +114,8 @@ const projectObject = [
         trackTitle:'Alien With a Sleepmask On',
         year:'2019',
         video:'',
-        image1:'',
-        image2:'https://res.cloudinary.com/coool/image/upload/v1569621792/ratboys/AWSMO_Mockup_v01_qisogd.png',
+        image1:'https://res.cloudinary.com/coool/image/upload/v1569621792/ratboys/AWSMO_Mockup_v01_qisogd.png',
+        image2:'',
         image3:'',
         image4:'',
         description:"Project not yet released",

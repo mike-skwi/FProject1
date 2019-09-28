@@ -86,8 +86,11 @@ class Landing extends React.Component {
   render() {
     return (
       <ul 
+      id="testst"
+
       // lowercase projects
         class="projects">
+          
        <Projects 
         setNewPage={(page) => this.setParentPage(page) }
         xCoord={this.state.xCoord} 

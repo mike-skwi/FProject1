@@ -6,27 +6,40 @@ class YearAndImages extends React.Component {
     constructor(props){
         super(props)
         this.state ={
-            visible:false
+            visible:false,
         }
     
-        const img1 = this.props.activeProject.image1;
-        console.log(img1 + "AHH");
         const imgArray =[
             this.props.activeProject.image1
         ]
     
     }
     
+    componentDidUpdate(e){
+        console.log("did update")
+    }
     
+
     render(){
         if (this.props.activeProject === this.props.projectName){
+            console.log("Img url -> " + this.props.img1);
+            const images = [ 
+                this.props.img1,
+                this.props.img2,
+                this.props.img3,
+                this.props.img4
+            ]
+            if(images.length[0] === ''){
+                // this is for making it render without the iamge if there are none
+                return(
+                    <div class="yearAndImages"> 
+                        <span id="year" style={yearStyle}>{this.props.year}</span>
+                    </div>
+            )}
             return(
                 <div class="yearAndImages"> 
+                    <img style={imgStyle} src={images[0]}></img>
                     <span id="year" style={yearStyle}>{this.props.year}</span>
-                    <img id="testtt" style={imgStyle}></img>
-                    {/* <span id="hoverImage" style={imgStyle}>{GreenUnit}</span> */}
-                    {/* <span id="titleNameProjectList">Sponge sponge sponge</span> */}
-                    {/* <img id="yearImage" src={GreenUnit}/> */}
                 </div>
         );}
         return(null);
@@ -37,11 +50,10 @@ const yearStyle = {
     // SHOULD display on cursor
 }
 
-
 const imgStyle = {
-    width:'500px',
-    height:'500px',
-
+    width:'350px',
+    height:'200px',
+    
 
 }
 
