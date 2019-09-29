@@ -87,7 +87,7 @@ class Projects extends React.Component {
                         img2={project.image2}
                         img3={project.image3}
                         img4={project.image4}
-
+                        released={project.released}
                         projectName={project.title}
                         activeProject={this.state.activeProject}
                         year={project.year} 

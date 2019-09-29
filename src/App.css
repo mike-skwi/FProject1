@@ -52,12 +52,15 @@ body{
     
   }
 
+
   .yearAndImages{
-    margin:0 auto;
     /* width:100%; */
     height:100%;
+    margin-left:10%;
     position:absolute;
-    z-index:-10 !important;
+    z-index:-20 !important;
+
+
 
   }
   
@@ -99,13 +102,14 @@ body{
     margin:auto;
     display:inline-block;
     color:#2a2f47;
-    z-index:20;
+    /* z-index:-90 !important; */
   }
 
   .title:hover{
     background-color:#2a2f47;
     color:white;
     opacity:.8;
+    /* z-index:-89; */
   }
 
   .title:active{
@@ -312,7 +316,8 @@ body{
 
   li:hover{
     opacity:.8;
-    z-index:5;
+    
+    z-index:-20;
     font-size:27px;
   }
 
@@ -445,6 +450,10 @@ body{
 
   }
 
+  /* This is for the projects component */
+  .Projects{
+  }
+
 }
  
 @media only screen
@@ -480,10 +489,12 @@ body{
     z-index:0;
     opacity:.4;
   }
-
+  
+  /* This is for the UL class*/
   .projects{
     padding-left:0px;
     margin-bottom:5%;
+    font-size:200px;
   }
 
   .title{

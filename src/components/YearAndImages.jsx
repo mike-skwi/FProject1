@@ -18,7 +18,6 @@ class YearAndImages extends React.Component {
     componentDidUpdate(e){
         console.log("did update")
     }
-    
 
     render(){
         if (this.props.activeProject === this.props.projectName){
@@ -29,11 +28,12 @@ class YearAndImages extends React.Component {
                 this.props.img3,
                 this.props.img4
             ]
-            if(images.length[0] === ''){
+            if(this.props.released === false){
                 // this is for making it render without the iamge if there are none
                 return(
-                    <div class="yearAndImages"> 
+                    <div class="yearAndImages">   
                         <span id="year" style={yearStyle}>{this.props.year}</span>
+                        <span> Coming Soon </span>
                     </div>
             )}
             return(
@@ -53,8 +53,7 @@ const yearStyle = {
 const imgStyle = {
     width:'350px',
     height:'200px',
-    
-
+    margin:'0'
 }
 
 export default YearAndImages;
