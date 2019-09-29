@@ -59,7 +59,7 @@ class Projects extends React.Component {
         return(
             <div class="Projects"> 
                 {projectObject.map((project, id)=>
-
+                <div class="testing">
                  <li >
                  <a 
                     // {/// get getdatavalue from a prop}
@@ -95,9 +95,11 @@ class Projects extends React.Component {
                     {/* Set a style here <p style={}> */}
                     {/* <p>{project.year}</p> */}
                 </div>
+
                 </a>
-             </li>   
-       
+             </li>  
+             </div> 
+
                     )}
                 
             </div>

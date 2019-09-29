@@ -53,7 +53,8 @@ const yearStyle = {
 const imgStyle = {
     width:'350px',
     height:'200px',
-    margin:'0'
+    left:'0%',
+    
 }
 
 export default YearAndImages;

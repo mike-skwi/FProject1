@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "coool_icon.ico",
+      "src": "coool_icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "coool_icon.ico",
+      "src": "coool_icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }	    
