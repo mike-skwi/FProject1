@@ -416,11 +416,43 @@ body{
     width:30%;
     margin:0 auto;
   }
+  #attic{
+
+  }
+
+  #attic{
+    position: absolute;
+    top:0;
+    right:0;
+    height:125px;
+    writing-mode: vertical-rl;
+    font-size: 1.3em;
+    letter-spacing:2px;
+    color:#2a2f47;
+
+  }
+
+  li{
+    color:#2a2f47;
+  }
+
+  #about{
+    display:none;
+  }
+
+  #homeImageMobile{
+    display:none;
+  }
 
   .headbanner{
     margin:0 auto;
-    position:relative;
+    position: absolute;;
     padding:0;
+    width:100%;
+  }
+
+  .fourImages{
+    width:50%;
   }
 
   .aboutContainer{
@@ -440,6 +472,29 @@ body{
     font-size:40px;
     text-align: center;
     list-style:none;
+  }
+  
+  #projectNameVideo{
+    text-align:center;
+    color: #2a2f47;
+  }
+
+  #projectVideo{
+    width:600px;
+    height:400px;
+    margin:0 auto;
+  }
+
+  #projectVideoTitle{
+    text-align:center;
+    color: #2a2f47;
+  }
+
+  #logo{
+    width:40%;
+    position: absolute;
+    margin:0 auto;
+  
   }
 
 }
@@ -471,6 +526,8 @@ body{
   ul{
     margin-bottom:10%;
     /* text-align: center; */
+    /* margin-top:5%; */
+    padding-top:5%;
   }
 
   li{
@@ -589,7 +646,6 @@ body{
     width:10%;
     writing-mode: vertical-rl;
     display:none;
-
   }
 
   #attic{
@@ -605,6 +661,8 @@ body{
     width:100%;
     /* color: #f3b7ba; */
     color:#2a2f47;
+    left:15%;
+
   }
 
   /* .title:active{
