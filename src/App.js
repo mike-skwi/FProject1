@@ -74,6 +74,16 @@ class App extends React.Component {
       </div>
     );
   }
+  else if (this.state.selectedProject.released === false){
+    return (
+      <div className="App">
+        <header className="App-header">
+          <Header goTo={this.goToPage}/>
+          <Landing goTo={this.goToPage}/>
+        </header>
+      </div>
+    );
+  }
   else{
     return (
       <div className="App">

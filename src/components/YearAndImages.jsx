@@ -33,12 +33,12 @@ class YearAndImages extends React.Component {
                 return(
                     <div class="yearAndImages">   
                         <span id="year" style={yearStyle}>{this.props.year}</span>
-                        <span> Coming Soon </span>
+                        <span id="coming_soon"> Coming Soon </span>
                     </div>
             )}
             return(
                 <div class="yearAndImages"> 
-                    <img style={imgStyle} src={images[0]}></img>
+                    <img id="landingImage" style={imgStyle} src={images[0]}></img>
                     <span id="year" style={yearStyle}>{this.props.year}</span>
                 </div>
         );}
@@ -47,14 +47,13 @@ class YearAndImages extends React.Component {
 }
 
 const yearStyle = {
-    // SHOULD display on cursor
 }
 
 const imgStyle = {
     width:'350px',
     height:'200px',
     left:'0%',
-    
+    zIndex:'-20'
 }
 
 export default YearAndImages;

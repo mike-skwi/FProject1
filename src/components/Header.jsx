@@ -52,18 +52,20 @@ class Header extends React.Component {
                     >
                         {props=>(
                             <div style={props}>
+                               
                                 <a id="about">About Us</a>
                             </div>
                         )}
                     </Spring>
                 <Spring
-                        from={{rotation:"0deg"}}
-                        to={{rotation:"360deg"}}
-                        config={config.gentle}
-                    >
+                        from={{marginTop:-500}}
+                        to={{marginTop:0}}
+                        config={{delay:100, duration:100}}
+                                            >
                         {props=>(
-                            <div style={props}>
+                            <div id="mobileStyle" style={props}>
                                 {/* notice the id of about us */}
+                                <img onClick={this.handleClick} id="homeImageMobile" src={logo}/>
                                 <a onClick={this.handleClickAbout} id="attic">About Us</a>
                             </div>
                         )}

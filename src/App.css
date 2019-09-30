@@ -11,6 +11,7 @@
 body{
   margin:0;
   background-color: #f3b7ba;
+  
   font-family: Eina;
 }
 
@@ -25,6 +26,15 @@ body{
   #projectDescription{
     text-align:center !important;
 
+  }
+
+  #homeImageMobile{
+    display:none;
+  }
+
+  #homeTextMobile{
+    display:none;
+    
   }
 
   #year{
@@ -97,20 +107,24 @@ body{
   #testst{
     z-index:9999;
   }
+
+  #landingImage{
+    z-index:-20;
+  }
+
   .title{
     font-size: 1.5em;
     width:auto;
     margin:auto;
     display:inline-block;
     color:#2a2f47;
-    /* z-index:-90 !important; */
+    z-index:2;
   }
 
   .title:hover{
     background-color:#2a2f47;
     color:white;
     opacity:.8;
-    /* z-index:-89; */
   }
 
   .title:active{
@@ -140,6 +154,7 @@ body{
 
   #projectVideoTitle{
     padding-top:0px;
+    color:#2a2f47;
   }
 
   .biggerProjectText{
@@ -275,8 +290,12 @@ body{
   }
   
   li{
-    z-index:-10;
+    z-index:10;
 
+  }
+
+  #coming_soon{
+    z-index:-90;
   }
 
   ul{
@@ -305,7 +324,7 @@ body{
   }
 
   li{
-
+    z-index: 3;
     list-style-type: none;
     margin-bottom:.3%;
     margin-top:.3%;
@@ -396,7 +415,6 @@ body{
   #logo{
     width:30%;
     margin:0 auto;
-    
   }
 
   .headbanner{
@@ -434,7 +452,20 @@ body{
   #logo{
     width:30%;
     margin:0 auto;
-    
+  }
+
+  #homeTextMobile{
+    position: absolute;
+    right:0;
+    height:auto;
+    font-size: 50px;
+    margin-bottom:10%;
+    letter-spacing:2px;
+    background:#2a2f47;
+    width:100%;
+    color: #f3b7ba;
+
+
   }
 
   ul{
@@ -461,12 +492,30 @@ body{
   and (-webkit-min-device-pixel-ratio: 2) {
 
   img{
-    /* width:100%;
-    height:100%; */
+    width:100%;
+    height:100;
   }
 
   body{
     
+  }
+
+  #projectVideoTitle{
+    padding-top:0px;
+    color:#2a2f47;
+    text-align: center;
+  }
+
+  #projectNameVideo{
+    font-size: 40px;
+    position: relative;
+    margin:0 auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom:.8%;
+    letter-spacing: .3rem;
+    color:#2a2f47;
+    z-index:-5;
   }
 
   #aboutUsImage{
@@ -477,7 +526,7 @@ body{
   }
 
   #projectVideo{
-    width:90%;
+    width:100%;
   }
 
   #logo{
@@ -487,6 +536,7 @@ body{
     bottom:0%;
     z-index:0;
     opacity:.4;
+    display:none;
   }
   
   /* This is for the UL class*/
@@ -545,15 +595,16 @@ body{
   #attic{
     position: absolute;
     top:0;
-    right:0;
+    /* right:0; */
     height:auto;
+    margin-left: 5%;
     font-size: 50px;
     margin-bottom:10%;
     letter-spacing:2px;
-    background:#2a2f47;
+    /* background:#2a2f47; */
     width:100%;
-    color: #f3b7ba;
-
+    /* color: #f3b7ba; */
+    color:#2a2f47;
   }
 
   /* .title:active{
@@ -593,7 +644,7 @@ body{
   }
 
   .headbanner{
-    padding-bottom:10%;
+    /* padding-bottom:10%; */
   }
 
   #projectDescription{
@@ -605,6 +656,15 @@ body{
 
   .aboutContainer{
     
+  }
+
+  #mobileStyle{
+    /* background: rgb(42,47,71); */
+    /* background: linear-gradient(90deg, rgba(42,47,71,1) 0%, rgba(243,183,186,1) 100%);  */
+  }
+
+  #homeImageMobile{
+    width:20%;
   }
 
 
