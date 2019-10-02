@@ -20,6 +20,21 @@ body{
   /*background-color:black;*/
 }
 
+@media all and (min-width: 5000px){
+
+  body{
+    background:black !important;
+  }
+
+  #projectImageLeft{
+    background:black;
+  }
+
+  .fourImages{
+
+  }
+
+
 
 @media all and (min-width: 1024px) {
 
@@ -724,6 +739,9 @@ body{
   #homeImageMobile{
     width:20%;
   }
+
+
+}
 
 
 }
