@@ -20,27 +20,26 @@ body{
   /*background-color:black;*/
 }
 
-@media all and (min-width: 5000px){
-
-  body{
-    background:black !important;
-  }
+@media all and (min-width: 4000px){
 
   #projectImageLeft{
-    background:black;
+    width:800px !important;
+    height:448px !important;
+    margin-left:2% !important;
+  }
+
+  #projectImageRight{
+    width:800px !important;
+    height:448px !important;
+    margin-left:11.5% !important;
   }
 
   .fourImages{
 
   }
 
-
-
-@media all and (min-width: 1024px) {
-
-  #projectDescription{
-    text-align:center !important;
-
+  .title{
+    font-size:7rem !important;
   }
 
   #homeImageMobile{
@@ -49,7 +48,134 @@ body{
 
   #homeTextMobile{
     display:none;
-    
+  }
+
+  #projectVideoTitle{
+    font-size:5rem;
+    margin-top:.5% !important;
+  }
+
+  .videoImages{
+    width:37% !important;
+    padding-top:0% !important;
+  }
+  #logo{
+    z-index:5;
+    height:600px !important;
+    width:600px !important;
+    display:block;
+    position: absolute;
+    left:0%;
+  }
+
+  #creditTitle{
+    padding:0%;
+    font-size:5rem !important;
+    margin-top:.5% !important;
+    width:50%;
+
+  }
+
+  #credits{
+    font-size:2rem;
+    width:50%;
+  }
+
+  #projectVideo{
+    height:64rem !important;
+  }
+
+  #projectNameVideo{
+    font-size:5.5rem !important;
+  }
+
+  .comingSoonLogo{
+    margin-left:38.5% !important;
+    margin-bottom:20% !important;
+    position: absolute;
+
+    top:250px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+
+  #comingSoonPage{
+    width:50%;
+    margin:20%;
+    height:50%;
+    align-content: center;
+  }
+
+  #comingSoonText{
+    position: absolute;
+    margin-left:30%;
+    letter-spacing: .1rem;
+    font-size:3rem;
+    width:340px;
+    top:235px;
+    color:#2a2f47;
+  }
+  
+
+
+  .comingSoonLogo{
+    margin-left:26.5%;
+    top:250px;
+  }
+
+
+
+  #projectDescription{
+    text-align:center !important;
+
+  }
+  
+  #mailIcon{
+    width: 41px;
+    height:56px;
+    padding-top:17px;
+    padding-left:11px;
+    position: absolute;
+  }
+
+  #mailIcon:hover{
+    opacity:.4;
+  }
+  #socialIcons{
+    width:50%;
+    top:20%;
+    margin-top:1%;
+    margin-left:60%;
+  }
+
+  #textAndIcons{
+    width:20%;
+    height:20%;
+  }
+
+  #instaIcon{
+    width:29px;
+    height:29px;
+    padding-left:15px;
+    padding-top:7.4%;
+  }
+
+  #twitIcon{
+    width:29px;
+    height:29px;
+  }
+
+  #twitIcon:hover{
+    background:blue;
+  }
+
+  #homeImageMobile{
+    display:none;
+  }
+
+  #homeTextMobile{
+    display:none;
   }
 
   #year{
@@ -90,7 +216,6 @@ body{
   #logo{
     z-index:5;
     height:300px;
-    width:300px;
     display:block;
     position: absolute;
     left:0%;
@@ -740,8 +865,48 @@ body{
     width:20%;
   }
 
+  #twitIcon{
+    width:27%;
+    padding-right:2%;
+  }
+
+  #mailIcon{
+    width:32%;
+    bottom:1.3%;
+    position:absolute;
+    height:20%;
+    right:40px;
+  }
+
+  #instaIcon{
+    width:25%;
+  }
+
+  .comingSoonLogo{
+    display: inline-block !important;
+    top:10%;
+    left:-40% !important;
+    position:absolute;
+    width:680px !important;
+  }
+
+  #comingSoonPage{
+    width:100% !important;
+    height:100% !important;
+    position: absolute;
+  }
+
+  #socialIcons{
+    margin-left:11.1% !important;
+  }
+  #comingSoonText{
+    width:40%;
+    font-size:4.5em;
+    color:#2a2f47;
+    position: relative;
+    padding-top:90%;
+    padding-left:10%;
+  }
 
 }
 
-
-}

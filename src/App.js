@@ -4,6 +4,7 @@ import Landing from './components/Landing'
 import Header from './components/Header'
 import AboutUs from './components/AboutUs';
 import IndivProject from './components/IndivProject.jsx';
+import ComingSoon from './components/ComingSoon.jsx';
 
 import { Spring } from 'react-spring';
 //import { Transition, animated, config } from 'react-spring/renderprops';
@@ -13,7 +14,7 @@ class App extends React.Component {
     super(props);
     this.state={
       imageActive:false,
-      pageName:"Landing",
+      pageName:"ComingSoon",
       selectedProject:"",
       shouldUpdate:false
     }
@@ -74,6 +75,16 @@ class App extends React.Component {
       </div>
     );
   }
+  else if (this.state.pageName === "ComingSoon"){
+    return (
+      <div className="App">
+        <header className="App-header">
+          <ComingSoon/>
+          </header>
+      </div>
+    );
+  }
+
   else if (this.state.selectedProject.released === false){
     return (
       <div className="App">

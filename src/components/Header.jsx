@@ -1,7 +1,7 @@
 import React from 'react';
 import { Spring, config } from 'react-spring/renderprops';
 import altLogo from '../Images/Alt_Logo.png'
-import logo from '../Images/Main_Logo.png'
+// import logo from '../Images/Main_Logo.png'
 
 class Header extends React.Component {
   constructor(props) {
@@ -39,7 +39,8 @@ class Header extends React.Component {
                         config={{delay:100, duration:100}}>
                         {props=>(
                             <div  style={props}>
-                              <img onClick={this.handleClick} id="logo" src={logo}/>
+                              <img onClick={this.handleClick} id="logo" src={'https://res.cloudinary.com/coool/image/upload/v1569962845/Lava%20Shape%20GIF_Square.gif'}/>
+                              
                               {/* <p id="backText">  Back</p> */}
                             </div>
                         )}
@@ -65,7 +66,7 @@ class Header extends React.Component {
                         {props=>(
                             <div id="mobileStyle" style={props}>
                                 {/* notice the id of about us */}
-                                <img onClick={this.handleClick} id="homeImageMobile" src={logo}/>
+                                <img onClick={this.handleClick} id="homeImageMobile" src={'https://res.cloudinary.com/coool/image/upload/v1569962845/Lava%20Shape%20GIF_Square.gif'}/>
                             </div>
                         )}
                     </Spring>
