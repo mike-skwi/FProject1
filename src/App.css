@@ -20,6 +20,121 @@ body{
   /*background-color:black;*/
 }
 
+@media all and (min-width: 5000px){
+
+  #projectImageLeft{
+    width:800px !important;
+    height:448px !important;
+    margin-left:2% !important;
+  }
+
+  #projectImageRight{
+    width:800px !important;
+    height:448px !important;
+    margin-left:11.5% !important;
+  }
+
+  .fourImages{
+
+  }
+
+  .title{
+    font-size:7rem !important;
+  }
+
+  #homeImageMobile{
+    display:none;
+  }
+
+  #homeTextMobile{
+    display:none;
+  }
+
+  #projectVideoTitle{
+    font-size:5rem;
+    margin-top:.5% !important;
+  }
+
+  .videoImages{
+    width:37% !important;
+    padding-top:0% !important;
+  }
+  #logo{
+    z-index:5;
+    /* add back when we're done with coming soon page */
+    /* height:600px !important;
+    width:600px !important; */
+    display:block;
+    position: absolute;
+    left:0%;
+  }
+
+  #creditTitle{
+    padding:0%;
+    font-size:5rem !important;
+    margin-top:.5% !important;
+    width:50%;
+
+  }
+
+  #credits{
+    font-size:2rem;
+    width:50%;
+  }
+
+  #projectVideo{
+    height:64rem !important;
+  }
+
+  #projectNameVideo{
+    font-size:5.5rem !important;
+  }
+
+  .comingSoonLogo{
+    top:25% !important;
+    width:2800px !important;
+    height:1400px !important;
+    left:-17% !important;
+  }
+
+  #textAndIcons{
+    /* width:2000px !important;
+    z-index: -2 !important;
+    background:blue;
+    height:2000px !important; */
+  }
+
+  #comingSoonText{
+    font-size:250px !important;
+    width:auto !important;
+    top:23% !important;
+  }
+
+  #socialIcons{
+    position:relative !important;
+    padding-top:10%;
+  }
+
+  #twitIcon{
+    width:200px !important;
+    height:200px !important;
+  }
+
+  #instaIcon{
+    width:200px !important;
+    height:200px !important;
+    padding-left:5% !important; 
+  }
+
+  #mailText{
+    font-size:150px ;
+    color:#2a2f47;
+    margin-top:10% !important;
+  }
+
+
+}
+
 @media all and (min-width: 4000px){
 
   #projectImageLeft{
@@ -91,28 +206,52 @@ body{
   }
 
   .comingSoonLogo{
-    background:blue;
-    top:30% !important;
-    width:1200px !important;
+    top:25% !important;
+    width:2200px !important;
+    height:1200px !important;
+    left:-17% !important;
+  }
 
+  #textAndIcons{
+    /* width:2000px !important;
+    z-index: -2 !important;
+    background:blue;
+    height:2000px !important; */
+  }
+
+  #comingSoonText{
+    font-size:200px !important;
+    width:auto !important;
+    top:23% !important;
   }
 
   #socialIcons{
-
+    position:relative !important;
+    padding-top:10%;
   }
 
   #twitIcon{
-
+    width:150px !important;
+    height:150px !important;
   }
 
   #instaIcon{
+    width:150px !important;
+    height:150px !important;
+    padding-left:5% !important; 
   }
 
+  #mailText{
+    font-size:100px ;
+    color:#2a2f47;
+    margin-top:10% !important;
+  }
 
 
 }
 
-@media all and (min-width: 1024px) and (min-width: 1600px) {
+
+@media all and (min-width: 1024px) and (min-width: 1600px){
 
   #comingSoonPage{
     width:50%;
@@ -184,13 +323,10 @@ body{
     z-index:20;
   }
 
-  #twitIcon:hover{
-
+  #mailText{
+    color:#2a2f47;
   }
 
-  #instaIcon:hover{
-
-  }
   #homeImageMobile{
     display:none;
   }
@@ -892,6 +1028,10 @@ body{
   #twitIcon{
     width:27%;
     padding-right:2%;
+  }
+
+  #mailText{
+    color:#2a2f47;
   }
 
   #mailIcon{
