@@ -132,6 +132,10 @@ body{
     margin-top:10% !important;
   }
 
+  #mailIcon{
+    padding-left:5% !important; 
+
+  }
 
 }
 
@@ -245,8 +249,14 @@ body{
     font-size:100px ;
     color:#2a2f47;
     margin-top:10% !important;
+    
   }
 
+  #mailIcon{
+    width:150px !important;
+    height:140px !important;
+    /* add padding left */
+  }
 
 }
 
@@ -286,16 +296,12 @@ body{
   }
   
   #mailIcon{
-    width: 41px;
-    height:56px;
-    padding-top:17px;
-    padding-left:11px;
-    position: absolute;
+    width:29px;
+    height:28px;
+    padding-left:15px;
   }
 
-  #mailIcon:hover{
-    opacity:.4;
-  }
+
   #socialIcons{
     width:50%;
     top:20%;
