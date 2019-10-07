@@ -1110,13 +1110,19 @@ body{
 
   #mailText{
     color:#2a2f47;
-    font-size:40px;
+    font-size:35px;
+    margin-left:11%;
+
   }
 
   #mailIcon{
     width:24%;
     margin-left:30px;
-    height:69px;
+    height:68px;
+  }
+
+  #textAndIcons{
+    
   }
 
   #instaIcon{
@@ -1127,7 +1133,7 @@ body{
   .comingSoonLogo{
     display: inline-block !important;
     top:8%;
-    left:-40% !important;
+    left:-35% !important;
     position:absolute;
     width:680px !important;
   }
@@ -1136,18 +1142,20 @@ body{
     width:100% !important;
     height:100% !important;
     position: absolute;
+    align-content:center;
   }
 
   #socialIcons{
-    width:320px;
+    /* width:320px; */
   }
   #comingSoonText{
     width:80%;
-    font-size:3.6em;
+    font-size:2.8em;
     color:#2a2f47;
     position: relative;
     padding-top:90%;
     padding-left:10%;
+    text-align:center;
   }
 
 }
