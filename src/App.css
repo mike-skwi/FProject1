@@ -528,7 +528,6 @@ body{
     letter-spacing: .05rem;
   }
 
-
   #projectImageRight{
     position: relative;
     width: 640px;
@@ -637,7 +636,6 @@ body{
 
   li:hover{
     opacity:.8;
-    
     z-index:-20;
     font-size:27px;
   }
@@ -651,7 +649,6 @@ body{
     text-decoration: none;
     height:50px;
     width:50px;
-    
   }
 
   #about{
@@ -714,7 +711,81 @@ body{
 
  }
  
+
 @media all and (min-width: 768px) and (max-width: 1024px) { 
+  
+  #comingSoonPage{
+    width:50%;
+    margin:20%;
+    height:50%;
+    align-content: center;
+  }
+
+  #comingSoonText{
+    position: absolute;
+    margin-left:30%;
+    letter-spacing: .1rem;
+    font-size:3rem;
+    width:340px;
+    top:235px;
+    color:#2a2f47;
+  }
+  
+
+
+  .comingSoonLogo{
+    margin-left:26.5%;
+    top:250px;
+    z-index:-1 !important;
+  }
+
+
+
+  #projectDescription{
+    text-align:center !important;
+
+  }
+  
+  #mailIcon{
+    width:29px;
+    height:28px;
+    padding-left:15px;
+  }
+
+
+  #socialIcons{
+    width:50%;
+    top:40% !important;
+    margin-top:85% !important;
+    margin-left:60%;
+
+  }
+
+  #textAndIcons{
+    width:20%;
+    height:20%;
+    z-index:19;
+
+  }
+
+  #instaIcon{
+    width:29px;
+    height:29px;
+    padding-left:15px;
+    padding-top:7.4%;
+  }
+
+  #twitIcon{
+    width:29px;
+    height:29px;
+    z-index:20;
+  }
+
+  #mailText{
+    color:#2a2f47;
+  }
+
+
   #logo{
     width:30%;
     margin:0 auto;
@@ -1032,29 +1103,30 @@ body{
   }
 
   #twitIcon{
-    width:27%;
-    padding-right:2%;
+    width:23%;
+    margin-left:40px;
+    margin-right:5px;
   }
 
   #mailText{
     color:#2a2f47;
+    font-size:40px;
   }
 
   #mailIcon{
-    width:32%;
-    bottom:1.3%;
-    position:absolute;
-    height:20%;
-    right:40px;
+    width:24%;
+    margin-left:30px;
+    height:69px;
   }
 
   #instaIcon{
-    width:25%;
+    width:23%;
+    margin-left:20px;
   }
 
   .comingSoonLogo{
     display: inline-block !important;
-    top:10%;
+    top:8%;
     left:-40% !important;
     position:absolute;
     width:680px !important;
@@ -1067,11 +1139,11 @@ body{
   }
 
   #socialIcons{
-    margin-left:11.1% !important;
+    width:320px;
   }
   #comingSoonText{
-    width:40%;
-    font-size:4.5em;
+    width:80%;
+    font-size:3.6em;
     color:#2a2f47;
     position: relative;
     padding-top:90%;

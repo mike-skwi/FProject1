@@ -16,7 +16,6 @@ class ComingSoon extends React.Component{
 
     hoverOverImage = (e) =>{
         this.setState({hovering:true, hoveredIcon:e.target.id})
-        console.log(e.target.id);
     }
 
     leaveImage = (e) =>{
@@ -36,8 +35,13 @@ class ComingSoon extends React.Component{
                             </p>
                         </div>
                         <div id="socialIcons">
-                            <img value='twitter' onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="twitIcon" src="https://res.cloudinary.com/coool/image/upload/v1570050941/icons/twitter_PNG15_ixivk3.png"/>
-                            <img value='insta' onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="instaIcon" src="https://res.cloudinary.com/coool/image/upload/co_rgb:db5545,e_colorize:70/v1570050941/icons/Instagram-icon-WHITE_qtg9uh.png"/>
+                            <a href="https://twitter.com/cooolsocial">
+                                <img value='twitter' onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="twitIcon" src="https://res.cloudinary.com/coool/image/upload/v1570050941/icons/twitter_PNG15_ixivk3.png"/>
+                            </a>
+                            <a href="https://www.instagram.com/cooolsocial/">
+                                <img href="https://www.instagram.com/cooolsocial/" value='insta' onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="instaIcon" src="https://res.cloudinary.com/coool/image/upload/co_rgb:db5545,e_colorize:70/v1570050941/icons/Instagram-icon-WHITE_qtg9uh.png"/>
+                            </a>
+
                             <img value='mail' onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="mailIcon" src="https://res.cloudinary.com/coool/image/upload/c_crop,h_920,w_1200/v1570050941/icons/584856b4e0bb315b0f7675ac_fqtcpf.png"/>
                         </div>
                     </div>
@@ -52,8 +56,12 @@ class ComingSoon extends React.Component{
                             </p>
                         </div>
                         <div id="socialIcons">
-                            <img value='twitter' onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="twitIcon" src="https://res.cloudinary.com/coool/image/upload/co_rgb:0079b5,e_colorize:70/v1570050941/icons/twitter_PNG15_ixivk3.png"/>
-                            <img value='insta' onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="instaIcon" src="https://res.cloudinary.com/coool/image/upload/v1570050941/icons/Instagram-icon-WHITE_qtg9uh.png"/>
+                            <a href="https://twitter.com/cooolsocial">
+                                <img href="https://twitter.com/cooolsocial" value='twitter' onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="twitIcon" src="https://res.cloudinary.com/coool/image/upload/co_rgb:0079b5,e_colorize:70/v1570050941/icons/twitter_PNG15_ixivk3.png"/>
+                            </a>
+                            <a href="https://www.instagram.com/cooolsocial/">
+                                <img href="https://www.instagram.com/cooolsocial/" value='insta' onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="instaIcon" src="https://res.cloudinary.com/coool/image/upload/v1570050941/icons/Instagram-icon-WHITE_qtg9uh.png"/>
+                            </a>
                             <img onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="mailIcon" src="https://res.cloudinary.com/coool/image/upload/c_crop,h_920,w_1200/v1570050941/icons/584856b4e0bb315b0f7675ac_fqtcpf.png"/>
                         </div>
                     </div>
