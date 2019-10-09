@@ -95,6 +95,11 @@ body{
     width:2800px !important;
     height:1400px !important;
     left:-17% !important;
+    margin-left:37.5% !important;
+  }
+
+  #mailText{
+    font-size:7.5em !important;
   }
 
   #textAndIcons{
@@ -922,10 +927,11 @@ body{
   }
 
 }
- 
+
+
 @media only screen
   and (min-device-width: 320px) 
-  /* and (max-device-width: 480px) */
+  and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
   img{
