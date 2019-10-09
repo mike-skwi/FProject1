@@ -103,7 +103,8 @@ class ComingSoon extends React.Component{
         else{
             return(
                 <div id="comingSoonPage">
-                    <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/v1569962834/Lava%20Shape%20GIF_Wide.gif'}/>
+                        <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/v1569962834/Lava%20Shape%20GIF_Wide.gif'}/>
+
                     <div id="textAndIcons">
                         <p id='comingSoonText'>Coming Soon
                         </p>

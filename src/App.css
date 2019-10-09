@@ -784,8 +784,6 @@ body{
     /* top:90% !important; */
     margin-top:340px !important;
     margin-left:69%;
-    
-    
   }
 
   #textAndIcons{
@@ -967,7 +965,7 @@ body{
 } */
 
 @media all
-  and (min-width: 320px) 
+  and (min-width: 220px) 
   and (max-width: 500px)
   /* and (-webkit-min-device-pixel-ratio: 2) */
   {
@@ -1210,10 +1208,10 @@ body{
 
   #comingSoonText{
     width:80%;
-    font-size:5.8em;
+    font-size:4.8em;
     color:#2a2f47;
     position: relative;
-    padding-top:50% !important;
+    padding-top:60% !important;
     padding-left: 10% !important;
     opacity:.9;
   }
@@ -1224,6 +1222,28 @@ body{
     height:300% !important;
     align-content:center;
   }
+
+  @media all
+  and (min-width: 220px) 
+  and (max-width: 500px)
+  /* and (-webkit-min-device-pixel-ratio: 2) */
+  {
+    #socialIcons{
+      width:105%;
+    
+    }
+  
+    #comingSoonText{
+    }
+
+    #twitIcon{
+      margin-left:12px;
+    }
+
+  }
+
+
+
 
 }
 
