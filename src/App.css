@@ -266,7 +266,7 @@ body{
 }
 
 
-@media all and (min-width: 1024px) and (min-width: 1600px){
+@media all and (min-width: 1024px) and (min-width: 1800px){
 
   #comingSoonPage{
     width:50%;
@@ -884,13 +884,39 @@ body{
 
 }
  
-@media all and (min-width: 480px) and (max-width: 768px) { 
+@media all and (min-width: 501px) and (max-width: 768px) { 
+/*   
+  #comingSoonPage{
+  }
+
+
+  .comingSoonLogo{
+    width:1900px !important;
+    height:1100px;
+    
+  }
+  
+  #comingSoonText{
+    padding-left:2%;
+    font-size:250px;
+    
+  }
+  
+  #textAndIcons{
+    width:100% !important;
+  }
+  
+  body{
+    width:330% !important;
+  }
+
+
+  
   img{
 
   }
 
   #logo{
-    width:30%;
     margin:0 auto;
   }
 
@@ -910,8 +936,6 @@ body{
 
   ul{
     margin-bottom:10%;
-    /* text-align: center; */
-    /* margin-top:5%; */
     padding-top:5%;
   }
 
@@ -920,7 +944,7 @@ body{
     font-size:40px;
     text-align: center;
 
-  }
+  } */
 
   /* This is for the projects component */
   .Projects{
@@ -928,10 +952,9 @@ body{
 
 }
 
-
 @media only screen
   and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  and (max-device-width: 900px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
   img{
@@ -1132,7 +1155,9 @@ body{
   }
 
   #textAndIcons{
-    
+    position:absolute !important;
+    top:-40%;
+    opacity:.9;
   }
 
   #instaIcon{
@@ -1141,11 +1166,19 @@ body{
   }
 
   .comingSoonLogo{
+    left:0% !important;
+
     display: inline-block !important;
-    top:-2%;
-    left:-41% !important;
+    top:-25%;
+    /* position:relative; */
+    left:-140% !important;
+    /* left:-41% !important; */
+    /* width:690px !important; */
+    width:1680px !important;
+    /* position:absolute; */
+    height:920px !important;
+    z-index:-4 !important;
     position:absolute;
-    width:690px !important;
   }
 
   #comingSoonPage{
@@ -1153,19 +1186,33 @@ body{
     height:100% !important;
     position: absolute;
     align-content:center;
+    
   }
 
   #socialIcons{
     padding-right:9%;
+    width:100%;
+    z-index:20 !important;
+    opacity:.5;
+    position:absolute;
+    top:60%;
   }
   #comingSoonText{
     width:80%;
-    font-size:2.8em;
+    font-size:5.8em;
     color:#2a2f47;
     position: relative;
-    padding-top:80%;
+    padding-top:50% !important;
     padding-left:10%;
     text-align:center;
+  }
+
+
+  body{
+    width:330% !important;
+    height:300% !important;
+    align-content:center;
+    padding:20%;
   }
 
 }
