@@ -90,6 +90,11 @@ body{
     font-size:5.5rem !important;
   }
 
+  #comingSoonPage{
+    /* width:100%; */
+  }
+
+
   .comingSoonLogo{
     top:25% !important;
     width:2800px !important;
@@ -113,11 +118,13 @@ body{
     font-size:250px !important;
     width:auto !important;
     top:23% !important;
+    padding-left:1800px !important;
+
   }
 
   #socialIcons{
-    position:relative !important;
     padding-top:10%;
+    left:415px;
   }
 
   #twitIcon{
