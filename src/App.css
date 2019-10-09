@@ -232,11 +232,14 @@ body{
     font-size:200px !important;
     width:auto !important;
     top:23% !important;
+    padding-left:1400px;
+
   }
 
   #socialIcons{
     position:relative !important;
-    padding-top:10%;
+    padding-top:13%;
+    padding-left:1400px !important;
   }
 
   #twitIcon{
@@ -247,7 +250,6 @@ body{
   #instaIcon{
     width:150px !important;
     height:150px !important;
-    padding-left:5% !important; 
   }
 
   #mailText{
@@ -259,7 +261,9 @@ body{
 
   #mailIcon{
     width:150px !important;
-    height:140px !important;
+    height:120px !important;
+    padding-bottom:10px;
+    padding-left:4%;
     /* add padding left */
   }
 
@@ -281,8 +285,9 @@ body{
     letter-spacing: .1rem;
     font-size:3rem;
     width:340px;
-    top:235px;
+    top:21% !important;
     color:#2a2f47;
+
   }
 
   .comingSoonLogo{
@@ -328,7 +333,7 @@ body{
     width:29px;
     height:29px;
     padding-left:15px;
-    padding-top:7.4%;
+    /* padding-top:7.4%; */
   }
 
   #twitIcon{
