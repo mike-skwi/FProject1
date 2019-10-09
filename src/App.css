@@ -265,8 +265,8 @@ body{
 
   #comingSoonPage{
     width:50%;
-    margin:20%;
-    height:50%;
+    margin:16%;
+    /* height:50%; */
     align-content: center;
   }
 
@@ -279,8 +279,6 @@ body{
     top:235px;
     color:#2a2f47;
   }
-  
-
 
   .comingSoonLogo{
     margin-left:26.5%;
@@ -301,12 +299,17 @@ body{
     padding-left:15px;
   }
 
+  #mailText{
+    font-size:1.5em;
+  }
+
 
   #socialIcons{
     width:50%;
-    top:20%;
+    /* top:20%; */
     margin-top:1%;
     margin-left:60%;
+    position:relative;
   }
 
   #textAndIcons{
@@ -922,7 +925,7 @@ body{
  
 @media only screen
   and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  /* and (max-device-width: 480px) */
   and (-webkit-min-device-pixel-ratio: 2) {
 
   img{
@@ -1103,9 +1106,10 @@ body{
   }
 
   #twitIcon{
-    width:23%;
+    width:25%;
     margin-left:40px;
     margin-right:5px;
+    height:77px;
   }
 
   #mailText{
@@ -1116,9 +1120,9 @@ body{
   }
 
   #mailIcon{
-    width:24%;
+    width:23%;
     margin-left:30px;
-    height:68px;
+    height:77px;
   }
 
   #textAndIcons{
@@ -1132,10 +1136,10 @@ body{
 
   .comingSoonLogo{
     display: inline-block !important;
-    top:8%;
-    left:-35% !important;
+    top:-2%;
+    left:-41% !important;
     position:absolute;
-    width:680px !important;
+    width:690px !important;
   }
 
   #comingSoonPage{
@@ -1146,14 +1150,14 @@ body{
   }
 
   #socialIcons{
-    /* width:320px; */
+    padding-right:9%;
   }
   #comingSoonText{
     width:80%;
     font-size:2.8em;
     color:#2a2f47;
     position: relative;
-    padding-top:90%;
+    padding-top:80%;
     padding-left:10%;
     text-align:center;
   }
