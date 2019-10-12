@@ -277,7 +277,7 @@ body{
 }
 
 
-@media all and (min-width: 1024px) and (min-width: 1800px){
+@media all and (min-width: 1024px) and (max-width: 2000px){
 
   #comingSoonPage{
     width:50%;
@@ -295,6 +295,12 @@ body{
     top:21% !important;
     color:#2a2f47;
 
+  }
+  
+  body{
+    width:300% !important;
+    height:100% !important;
+    align-content:center;
   }
 
   .comingSoonLogo{
@@ -331,9 +337,8 @@ body{
 
   #textAndIcons{
     /* width:20%; */
-    height:20%;
+    height:100%;
     z-index:19;
-
   }
 
   #instaIcon{
@@ -1008,15 +1013,6 @@ body{
     width:100%;
   }
 
-  #logo{
-    width:75%;
-    position: absolute;;
-    left:25%;
-    bottom:0%;
-    z-index:0;
-    opacity:.4;
-    display:none;
-  }
   
   /* This is for the UL class*/
   .projects{
@@ -1168,9 +1164,8 @@ body{
   }
 
   #textAndIcons{
-    position:absolute !important;
-    top:-40%;
-    opacity:.9;
+    /* position:absolute !important; */
+    /* top:-20%; */
   }
 
   #instaIcon{
@@ -1178,15 +1173,26 @@ body{
     margin-left:20px;
   }
 
+  #logo{
+    /* width:75%; */
+    /* position: absolute;; */
+    /* left:25%;
+    bottom:0%;
+    z-index:0; */
+    display:none;
+  }
+
   .comingSoonLogo{
-    left:0% !important;
-    display: inline-block !important;
-    top:-25%;
-    left:-125% !important;
-    width:1680px !important;
-    height:920px !important;
+    /* width:40% !important; */
+
+    display: inline !important;
+    /* top:30%; */
+    /* left:-% !important; */
+
     z-index:-4 !important;
+    /* width:800px; */
     position:absolute;
+    
   }
 
   #comingSoonPage{
@@ -1201,25 +1207,25 @@ body{
     padding-right:9%;
     width:100%;
     z-index:20 !important;
-    opacity:.5;
     /* position:absolute; */
     top:60%;
   }
 
   #comingSoonText{
-    width:80%;
-    font-size:4.8em;
+    text-align:center;
+    width:100%;
+    font-size:3.1em;
     color:#2a2f47;
     position: relative;
-    padding-top:60% !important;
-    padding-left: 10% !important;
-    opacity:.9;
+    padding-top:80% !important;
+    /* padding-left: 10% !important; */
+    align-content: center;
   }
 
 
   body{
-    width:330% !important;
-    height:300% !important;
+    width:100% !important;
+    height:100% !important;
     align-content:center;
   }
 
