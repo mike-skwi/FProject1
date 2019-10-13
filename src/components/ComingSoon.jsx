@@ -29,7 +29,9 @@ class ComingSoon extends React.Component{
             if(this.state.hoveredIcon === 'instaIcon'){
                 return(
                     <div id="comingSoonPage">
-                        <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/v1569962834/Lava%20Shape%20GIF_Wide.gif'}/>
+                        <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/c_crop,g_faces:center,h_750,w_443,x_249,y_0/v1570920555/Lava_Shape_GIF_Wide_Original_dsivtc.gif'}/>
+
+                        {/* <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/v1569962834/Lava%20Shape%20GIF_Wide.gif'}/> */}
                         <div id="textAndIcons">
                             <p id='comingSoonText'>Coming Soon
                             </p>
@@ -51,7 +53,9 @@ class ComingSoon extends React.Component{
             else if(this.state.hoveredIcon === 'twitIcon'){
                 return(
                     <div id="comingSoonPage">
-                        <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/v1569962834/Lava%20Shape%20GIF_Wide.gif'}/>
+                        <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/c_crop,g_faces:center,h_750,w_443,x_249,y_0/v1570920555/Lava_Shape_GIF_Wide_Original_dsivtc.gif'}/>
+
+                        {/* <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/v1569962834/Lava%20Shape%20GIF_Wide.gif'}/> */}
                         <div id="textAndIcons">
                             <p id='comingSoonText'>Coming Soon
                             </p>
@@ -71,7 +75,9 @@ class ComingSoon extends React.Component{
             else if(this.state.hoveredIcon === 'mailIcon'){
                 return(
                     <div id="comingSoonPage">
-                        <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/v1569962834/Lava%20Shape%20GIF_Wide.gif'}/>
+                        <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/c_crop,g_faces:center,h_750,w_443,x_249,y_0/v1570920555/Lava_Shape_GIF_Wide_Original_dsivtc.gif'}/>
+
+                        {/* <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/v1569962834/Lava%20Shape%20GIF_Wide.gif'}/> */}
                         <div id="textAndIcons">
                             <p id='comingSoonText'>Coming Soon
                             </p>
@@ -103,7 +109,8 @@ class ComingSoon extends React.Component{
         else{
             return(
                 <div id="comingSoonPage">
-                        <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/v1569962834/Lava%20Shape%20GIF_Wide.gif'}/>
+                        {/* <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/v1569962834/Lava%20Shape%20GIF_Wide.gif'}/> */}
+                        <img id="logo" class="comingSoonLogo" src={'https://res.cloudinary.com/coool/image/upload/c_crop,g_faces:center,h_750,w_443,x_249,y_0/v1570920555/Lava_Shape_GIF_Wide_Original_dsivtc.gif'}/>
 
                     <div id="textAndIcons">
                         <p id='comingSoonText'>Coming Soon
