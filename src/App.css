@@ -1,6 +1,9 @@
 /* #db5545  icon red*/
 /* #047cb4 icon blue*/
 
+@-ms-viewport{
+  width: device-width;
+}
 
 
 @font-face{
@@ -20,7 +23,7 @@ body{
   /*background-color:black;*/
 }
 
-@media all and (min-width: 3000px) and (max-width:4000px){
+@media all and (min-width: 3001px) and (max-width:4000px){
 
   #projectImageLeft{
     width:800px !important;
