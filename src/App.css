@@ -20,7 +20,7 @@ body{
   /*background-color:black;*/
 }
 
-@media all and (min-width: 5000px) and (max-width:6000px){
+@media all and (min-width: 3000px) and (max-width:4000px){
 
   #projectImageLeft{
     width:800px !important;
@@ -90,18 +90,7 @@ body{
     font-size:5.5rem !important;
   }
 
-  #comingSoonPage{
-    /* width:100%; */
-  }
-
-
-  .comingSoonLogo{
-    top:25% !important;
-    width:2800px !important;
-    height:1400px !important;
-    left:-17% !important;
-    margin-left:37.5% !important;
-  }
+  
 
   #mailText{
     font-size:7.5em !important;
@@ -146,12 +135,107 @@ body{
 
   #mailIcon{
     padding-left:5% !important; 
+  }
+
+  #comingSoonPage{
+    /* width:50%;
+    margin:16%; */
+    /* height:50%; */
+    width:100%;
+    height:100%;
+    align-content: center;
+    /* text-align:center; */
+    
+  }
+
+  #logo{
+    z-index:5;
+    height:300px;
+    display:block;
+    position: absolute;
+    left:0%;
+  }
+
+  #comingSoonText{
+    /* position: absolute; */
+    /* margin-left:30%; */
+    letter-spacing: .1rem;
+    font-size:6.5rem;
+    /* display:inline-block !important; */
+    width:1000px;
+    /* margin-top:21% !important; */
+    color:#2a2f47;
+    margin-top: 0% !important;
+    margin-bottom:0% !important;
+  }
+  
+  body{
+    /* width:300% !important; */
+    height:900px !important;
+    align-content:center;
+  }
+
+  .comingSoonLogo{
+    /* margin-left:26.5%; */
+    /* top:250px; */
+    z-index:-1 !important;
+    position:relative !important;
+    padding-left:8%;
+    height:1000px !important;
+    display:inline-block !important;
+    margin-left:25%;
+    margin-top:17%;
+    text-align:center;
+    vertical-align: top;
+  }
+
+  #socialIcons{
+    /* width:50%; */
+    /* top:20%; */
+    /* margin-top:33%; */
+    /* margin-left:60%; */
+    position:relative !important;
+    /* display:inline-block !important; */
+  }
+
+  #textAndIcons{
+    /* height:100%; */
+    z-index:19;
+    display:inline-block !important;
+    /* width:50%; */
+    margin-top:20%;
+  }
+
+  #instaIcon{
+    width:59px;
+    height:59px;
+    padding-left:15px;
+    /* padding-top:7.4%; */
+  }
+
+  #mailIcon{
+    width:59px;
+    height:58px;
+    padding-left:15px;
 
   }
 
+  #twitIcon{
+    width:59px;
+    height:59px;
+    z-index:20;
+  }
+
+  #mailText{
+    color:#2a2f47;
+    font-size:1.5em;
+    /* margin-bottom:20%; */
+  }
+
+
 }
 
-@media all and (min-width: 2000px) and (max-width:4999){
+@media all and (min-width: 2000px) and (max-width:3000px){
 
   #projectImageLeft{
     width:800px !important;
@@ -243,9 +327,9 @@ body{
     /* position: absolute; */
     /* margin-left:30%; */
     letter-spacing: .1rem;
-    font-size:3.5rem;
+    font-size:6.5rem;
     /* display:inline-block !important; */
-    width:600px;
+    width:800px;
     /* margin-top:21% !important; */
     color:#2a2f47;
     margin-top: 0% !important;
@@ -264,6 +348,7 @@ body{
     z-index:-1 !important;
     position:relative !important;
     padding-left:8%;
+    height:500px !important;
     display:inline-block !important;
     margin-left:25%;
     margin-top:17%;
@@ -289,22 +374,22 @@ body{
   }
 
   #instaIcon{
-    width:29px;
-    height:29px;
+    width:59px;
+    height:59px;
     padding-left:15px;
     /* padding-top:7.4%; */
   }
 
   #mailIcon{
-    width:29px;
-    height:28px;
+    width:59px;
+    height:58px;
     padding-left:15px;
 
   }
 
   #twitIcon{
-    width:29px;
-    height:29px;
+    width:59px;
+    height:59px;
     z-index:20;
   }
 
@@ -787,8 +872,6 @@ body{
     padding-right: 20%;
     padding-left:20%;
   }
-
-
 
  }
  
