@@ -94,7 +94,6 @@ class ComingSoon extends React.Component{
                             {props=>(
                                 <div  style={props}>
                                     <p id='mailText'>info@itscoool.com</p>
-
                                 </div>
                             )}
                         </Spring>
