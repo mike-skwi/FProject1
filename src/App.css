@@ -112,7 +112,7 @@ body{
   }
 
   #comingSoonText{
-    font-size:220px !important;
+    font-size:175px !important;
     letter-spacing: .1rem;
     font-size:6.5rem;
     color:#2a2f47;
@@ -157,7 +157,7 @@ body{
     height:100%;
     align-content: center;
     /* text-align:center; */
-    
+    align-text:center;
   }
 
   #logo{
