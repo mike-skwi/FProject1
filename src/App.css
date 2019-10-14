@@ -23,6 +23,9 @@ body{
   /*background-color:black;*/
 }
 
+
+
+
 @media only screen and (min-width: 3001px) and (max-width:6000px){
 
   #projectImageLeft{
@@ -101,23 +104,26 @@ body{
   }
 
   #textAndIcons{
-    /* width:2000px !important;
-    z-index: -2 !important;
-    background:blue;
-    height:2000px !important; */
+    /* height:100%; */
+    z-index:19;
+    display:inline-block !important;
+    /* width:50%; */
+    margin-top:20%;
   }
 
   #comingSoonText{
-    font-size:250px !important;
-    width:auto !important;
-    top:23% !important;
-    padding-left:1800px !important;
-
+    font-size:220px !important;
+    letter-spacing: .1rem;
+    font-size:6.5rem;
+    color:#2a2f47;
+    margin-top: 0% !important;
+    margin-bottom:0% !important;
   }
 
   #socialIcons{
     padding-top:10%;
-    left:415px;
+    position:relative !important;
+
   }
 
   #twitIcon{
@@ -138,6 +144,8 @@ body{
   }
 
   #mailIcon{
+    height:200px;
+    width:200px;
     padding-left:5% !important; 
   }
 
@@ -159,22 +167,8 @@ body{
     position: absolute;
     left:0%;
   }
-
-  #comingSoonText{
-    /* position: absolute; */
-    /* margin-left:30%; */
-    letter-spacing: .1rem;
-    font-size:6.5rem;
-    /* display:inline-block !important; */
-    width:1000px;
-    /* margin-top:21% !important; */
-    color:#2a2f47;
-    margin-top: 0% !important;
-    margin-bottom:0% !important;
-  }
   
   body{
-    /* width:300% !important; */
     height:900px !important;
     align-content:center;
   }
@@ -193,51 +187,12 @@ body{
     vertical-align: top;
   }
 
-  #socialIcons{
-    /* width:50%; */
-    /* top:20%; */
-    /* margin-top:33%; */
-    /* margin-left:60%; */
-    position:relative !important;
-    /* display:inline-block !important; */
-  }
+ 
 
-  #textAndIcons{
-    /* height:100%; */
-    z-index:19;
-    display:inline-block !important;
-    /* width:50%; */
-    margin-top:20%;
-  }
-
-  #instaIcon{
-    width:59px;
-    height:59px;
-    padding-left:15px;
-    /* padding-top:7.4%; */
-  }
-
-  #mailIcon{
-    width:59px;
-    height:58px;
-    padding-left:15px;
-
-  }
-
-  #twitIcon{
-    width:59px;
-    height:59px;
-    z-index:20;
-  }
-
-  #mailText{
-    color:#2a2f47;
-    font-size:1.5em;
-    /* margin-bottom:20%; */
-  }
 
 
 }
+
 
 @media only screen and (min-width: 2000px) and (max-width:3000px){
 
@@ -880,7 +835,7 @@ body{
  }
  
 
-@media only screen and (min-width: 500px) and (max-width: 1280px) { 
+@media only screen and (min-width: 800px) and (max-width: 1280px) { 
    
   #comingSoonPage{
     /* width:50%; */
@@ -1128,7 +1083,7 @@ body{
 
 @media only screen
   and (min-width: 220px) 
-  and (max-width: 500px)
+  and (max-width: 799px)
   /* and (-webkit-min-device-pixel-ratio: 2) */
   {
 
@@ -1301,23 +1256,22 @@ body{
   }
 
   #twitIcon{
-    width:25%;
     margin-left:40px;
     margin-right:5px;
-    height:77px;
+    width:19%;
+    height:20%;
   }
 
   #mailText{
     color:#2a2f47;
     font-size:35px;
-    margin-left:11%;
     text-align:center;
   }
 
   #mailIcon{
-    width:23%;
     margin-left:30px;
-    height:77px;
+    width:19.5%;
+    
   }
 
   #textAndIcons{
@@ -1326,7 +1280,8 @@ body{
   }
 
   #instaIcon{
-    width:23%;
+    width:16%;
+    height:20%;
     margin-left:20px;
   }
 
@@ -1341,7 +1296,8 @@ body{
 
   .comingSoonLogo{
     /* width:40% !important; */
-
+    width:400px;
+    
     display: inline !important;
     /* top:30%; */
     /* left:-% !important; */
@@ -1355,9 +1311,8 @@ body{
   #comingSoonPage{
     width:100% !important;
     height:100% !important;
-    /* position: absolute; */
-    align-content:center;
-    
+    align-content:center !important;
+    text-align:center;
   }
 
   #socialIcons{
@@ -1365,13 +1320,13 @@ body{
     width:100%;
     z-index:20 !important;
     /* position:absolute; */
-    top:60%;
+    /* top:60%; */
   }
 
   #comingSoonText{
     text-align:center;
     width:100%;
-    font-size:3.1em;
+    font-size:3.4em;
     color:#2a2f47;
     position: relative;
     /* padding-top:80% !important; */
@@ -1408,5 +1363,7 @@ body{
 
 
 
+
+  
 }
 
