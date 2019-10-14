@@ -869,7 +869,7 @@ body{
   .comingSoonLogo{
     top:250px;
     z-index:-1 !important;
-    width:60% !important;
+    width:50% !important;
     left:5%;
     /* top:23%; */
     padding-right:5%;
@@ -1256,7 +1256,7 @@ body{
   }
 
   #twitIcon{
-    margin-left:40px;
+    /* margin-left:40px; */
     margin-right:5px;
     width:19%;
     height:20%;
@@ -1270,8 +1270,7 @@ body{
 
   #mailIcon{
     margin-left:30px;
-    width:19.5%;
-    
+    width:15.5%;
   }
 
   #textAndIcons{
@@ -1326,12 +1325,13 @@ body{
   #comingSoonText{
     text-align:center;
     width:100%;
-    font-size:3.4em;
+    font-size:4em;
     color:#2a2f47;
     position: relative;
     /* padding-top:80% !important; */
     /* padding-left: 10% !important; */
     align-content: center;
+    margin-top:0 !important;
   }
 
 
@@ -1347,7 +1347,7 @@ body{
   /* and (-webkit-min-device-pixel-ratio: 2) */
   {
     #socialIcons{
-      width:105%;
+      width:100%;
     
     }
   
@@ -1355,7 +1355,6 @@ body{
     }
 
     #twitIcon{
-      margin-left:12px;
     }
 
   }
