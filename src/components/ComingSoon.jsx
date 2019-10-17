@@ -84,9 +84,7 @@ class ComingSoon extends React.Component{
                             <div id="socialIcons">
                             <img value='twitter' onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="twitIcon" src="https://res.cloudinary.com/coool/image/upload/v1570050941/icons/twitter_PNG15_ixivk3.png"/>
                                 <img value='insta' onMouseEnter={this.hoverOverImage} onMouseLeave={this.leaveImage} id="instaIcon" src="https://res.cloudinary.com/coool/image/upload/v1570050941/icons/Instagram-icon-WHITE_qtg9uh.png"/>
-                                <img value='mail' onMouseEnter={this.hoverOverImage} id="mailIcon" src="https://res.cloudinary.com/coool/image/upload/v1571077827/mailIcon.png"/>
-                                                
-                                                
+                                <img value='mail' onMouseEnter={this.hoverOverImage} id="mailIcon" src="https://res.cloudinary.com/coool/image/upload/v1571077827/mailIcon.png"/>        
                             <Spring
                             from={{marginTop:-30}}
                             to={{marginTop:0}}
